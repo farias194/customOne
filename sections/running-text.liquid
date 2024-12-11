@@ -1,18 +1,15 @@
 <style>
-.wrapper{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: auto;
-}
 .running-text{
     font-size: 16px;
-    display: inline-block;
-    animation: scroll-text 10s linear infinite;
-    white-space: nowrap;
-    position: absolute;
+    position: relative;
 }
-
+.wrapper{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100vw;
+    height: auto;
+    animation: scroll-text 10s linear infinite;
+}
 @keyframes sroll-text {
     0%{
         transform: translateX(100%)
