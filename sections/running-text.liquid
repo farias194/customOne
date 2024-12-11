@@ -1,14 +1,17 @@
 <style>
-.running-text{
-    font-size: 16px;
-    position: relative;
+.wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%; /* Adjust to your container width */
+  height: 40px; /* Adjust to your text height */
 }
-.wrapper{
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100vw;
-    height: auto;
-    animation: scroll-text 10s linear infinite;
+
+.running-text {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  animation: scroll-text 10s linear infinite;
 }
 @keyframes sroll-text {
     0%{
