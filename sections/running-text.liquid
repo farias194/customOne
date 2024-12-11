@@ -1,0 +1,49 @@
+<style>
+
+
+</style>
+
+<div class="running-text">{{section.settings.text}}</div>
+
+{% schema  %}  
+{
+"name": "running text",
+"tag": "section",
+"settings": [
+    {
+        "type": "textarea",
+        "id": "running-text",
+        "label": "Running Text",
+        "default": "Add text that will run across the screen here"
+
+}
+
+
+],
+
+    "blocks": [
+        {
+"type": "select",
+"name": "font-weight",
+"settings": [
+    {
+        "type": "select",
+        "id": "font-weight",
+        "label":"font weight",
+        "options": [
+            {"value": "normal", "label": "normal"},
+            {"value": "bold", "label": "bold"},
+            {"value": "light", "label": "light"}
+        ],
+        
+        "default": "normal"
+    }
+]
+        }
+]
+
+
+
+}
+
+{% endschema %}
