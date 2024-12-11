@@ -1,13 +1,31 @@
 <style>
 .running-text{
     font-size: 16px;
+    display: inline-block;
+    position: relative;
+}
+.wrapper{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100vw;
+    height: auto;
+    animation: scroll-text 2s ease-in;
+}
+@keyframes sroll-text {
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+
+    
 }
 
-
 </style>
-
+<div class="wrapper">
 <div class="running-text" style="font-weight:{{section.settings.font_weight}}">{{section.settings.running-text}}</div>
-
+</div>
 {% schema  %}  
 {
 "name": "running-text",
