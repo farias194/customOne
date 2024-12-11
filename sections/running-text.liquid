@@ -1,9 +1,12 @@
 <style>
+.running-text{
+    font-size: 16px;
+}
 
 
 </style>
 
-<div class="running-text">{{section.settings.running-text}}</div>
+<div class="running-text" style="{{section.settings.font_weight}}">{{section.settings.running-text}}</div>
 
 {% schema  %}  
 {
@@ -16,21 +19,12 @@
         "label": "Running Text",
         "default": "Add text that will run across the screen here"
 
-}
-
-
-],
-
-    "blocks": [
-        {
+},
+{ 
 "type": "select",
-"name": "font-weight",
-"settings": [
-    {
-        "type": "select",
-        "id": "font-weight",
-        "label":"font weight",
-        "options": [
+"id": "font_weight",
+"label": "Font Weight",
+ "options": [
             {"value": "normal", "label": "normal"},
             {"value": "bold", "label": "bold"},
             {"value": "light", "label": "light"}
@@ -38,12 +32,11 @@
         
         "default": "normal"
     }
-]
-        }
-]
+]}
 
 
 
-}
+
+  
 
 {% endschema %}
