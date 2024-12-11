@@ -2,14 +2,16 @@
 .running-text{
     font-size: 16px;
     display: inline-block;
-    position: relative;
+    animation: scroll-text 10s linear infinite;
+
+    position: absolute;
 }
 .wrapper{
     overflow: hidden;
     white-space: nowrap;
-    width: 100vw;
+    position: relative;
+    width: auto
     height: auto;
-    animation: scroll-text 10s linear infinite;
 }
 @keyframes sroll-text {
     0%{
