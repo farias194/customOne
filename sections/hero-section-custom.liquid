@@ -46,7 +46,7 @@
         <p>{{block.settings.text_line}}</p>
         {% endif %}
     {% if block.type == 'image_picker' %}
-<img width=500px height="500px" src="{{block.settings.block_image}}" alt="hero image">
+<img width=500px height="500px" src="{{block.settings.block_image | img_url: 'master'}}" alt="hero image">
 {% endif %}
 {% endfor %}
  </div> 
