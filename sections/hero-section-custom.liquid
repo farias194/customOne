@@ -42,7 +42,7 @@
  <div>
 <h1>{{settings.hero_section}}</h1>
 {% for block in blocks %}
-    {% if block.type =='text_line' %}
+    {% if block.type =='text' %}
         <p>{{block.settings.text_line}}</p>
         {% endif %}
     {% if block.type == 'image_picker' %}
