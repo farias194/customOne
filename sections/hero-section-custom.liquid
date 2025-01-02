@@ -25,6 +25,15 @@
                 }
             ]
 
+                },
+                {
+                    "type": "text",
+                    "name": "text Line",
+                    "settings": [{
+                        "id": "text_line",
+                        "type": "text",
+                        "label": "text_line"
+                    }]
                 }
     ]
 }
@@ -33,6 +42,9 @@
  <div>
 <h1>{{settings.hero_section}}</h1>
 {% for block in blocks %}
+    {% if block.type =='text_line' %}
+        <p>{{block.settings.text_line}}</p>
+        {% endif %}
     {% if block.type == 'image_picker' %}
 <img width=500px height="500px" src="{{block.settings.block_image}}" alt="hero image">
 {% endif %}
