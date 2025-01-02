@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+
+    "hero_text_section": { 
+"type" :"hero-section",
+
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
