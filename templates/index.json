@@ -11,11 +11,27 @@
   "sections": {
     "hero_section_custom": {
       "type": "hero-section-custom",
-      "settings": {}
-
- 
-
-
+      "blocks": {
+        "image_picker_EAANGK": {
+          "type": "image_picker",
+          "settings": {
+            "block_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg"
+          }
+        },
+        "text_BekyE6": {
+          "type": "text",
+          "settings": {
+            "text_line": "nnnnn"
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_EAANGK",
+        "text_BekyE6"
+      ],
+      "settings": {
+        "hero_section": "insert text here"
+      }
     },
     "image_banner": {
       "type": "image-banner",
