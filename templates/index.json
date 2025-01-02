@@ -10,8 +10,8 @@
 {
   "sections": {
 
-    "hero_text_section": { 
-"type" :"hero-section"
+    "hero_section_custom": { 
+"type" :"hero-section-custom"
 
 
     },
@@ -235,7 +235,7 @@
     }
   },
   "order": [
-    "hero-section",
+    "hero_section_custom",
     "image_banner",
     "running-text",
     "rich_text",

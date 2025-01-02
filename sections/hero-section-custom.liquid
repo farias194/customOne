@@ -1,8 +1,40 @@
 {% schema  %} 
 
+{
+    "name": "Hero Section",
+    "settings": [
+        {
+            "id": "hero_section",
+            "type": "text",
+            "label": "text",
+            "default": "insert text here"
+
+        }
+        
+    ],
+    "blocks": [
+        {
+            "id": "text_image",
+            "type": "image_picker",
+            "name": "Image Block",
+            "settings": [
+                {
+                    "id": "block_image",
+                    "type": "image_picker",
+                    "default": "pick an image"
+                }
+            ]
+
+                }
+    ]
+}
  {% endschema %}
 
  <div>
-<div>hi</div>
-
+<h1>{{settings.hero_section}}</h1>
+{% for block in blocks %}
+    {% if block.type == 'image_picker' %}
+<img src={{block.settings.block_image}} alt="hero image">
+{% endif %}
+{%endfor%}
  </div>
