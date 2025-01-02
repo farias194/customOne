@@ -41,7 +41,7 @@
 
  <div>
 <h1>{{section.settings.hero_section}}</h1>
-{% if section.block.size < 0 %}
+{% if section.block.size > 0 %}
 {% for block in blocks %}
     {% if block.type =='text' %}
         <p>{{block.settings.text_line}}</p>
