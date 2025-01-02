@@ -9,11 +9,9 @@
  */
 {
   "sections": {
-
-    "hero_text_section": { 
-"type" :"hero-section"
-
-
+    "hero_section_custom": {
+      "type": "hero-section-custom",
+      "settings": {}
     },
     "image_banner": {
       "type": "image-banner",
@@ -235,7 +233,7 @@
     }
   },
   "order": [
-    "hero-section",
+    "hero_section_custom",
     "image_banner",
     "running-text",
     "rich_text",
