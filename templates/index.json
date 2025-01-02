@@ -49,7 +49,8 @@
         "button"
       ],
       "settings": {
-        "image": "{{ shop.brand.cover_image }}",
+        "image": "shopify://shop_images/woman-holding-coffee-mug.jpg",
+        "image_2": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
