@@ -237,7 +237,7 @@
     }
   },
   "order": [
-    "hero_section_custom",
+    "hero-section-custom",
     "image_banner",
     "running-text",
     "rich_text",
