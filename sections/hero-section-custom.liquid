@@ -39,11 +39,10 @@
 }
  {% endschema %}
 
- <div>
 <h1>{{section.settings.hero_section}}</h1>
 {% if section.block.size > 0 %}
 {% for block in blocks %}
-    {% if block.type =='text' %}
+    {% if block.type == 'text' %}
         <p>{{block.settings.text_line}}</p>
         {% endif %}
     {% if block.type == 'image_picker' %}
@@ -51,4 +50,3 @@
 {% endif %}
 {% endfor %}
 {% endif %}
- </div> 
