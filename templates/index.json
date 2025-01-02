@@ -11,7 +11,8 @@
   "sections": {
 
     "hero_text_section": { 
-"type" :"hero-section",
+"type" :"hero-section"
+
 
     },
     "image_banner": {
@@ -234,6 +235,7 @@
     }
   },
   "order": [
+    "hero-section",
     "image_banner",
     "running-text",
     "rich_text",
