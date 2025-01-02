@@ -34,7 +34,7 @@
 <h1>{{settings.hero_section}}</h1>
 {% for block in blocks %}
     {% if block.type == 'image_picker' %}
-<img src={{block.settings.block_image}} alt="hero image">
+<img width=500px height="500px" src={{block.settings.block_image}} alt="hero image">
 {% endif %}
-{%endfor%}
- </div>
+{% endfor %}
+ </div> 
