@@ -32,7 +32,7 @@
                     "settings": [{
                         "id": "text_line",
                         "type": "text",
-                        "label": "text_line"
+                        "label": "enter lext line here"
                     }]
                 }
     ]
@@ -40,7 +40,7 @@
  {% endschema %}
 
  <div>
-<h1>{{settings.hero_section}}</h1>
+<h1>{{section.settings.hero_section}}</h1>
 {% for block in blocks %}
     {% if block.type =='text' %}
         <p>{{block.settings.text_line}}</p>
