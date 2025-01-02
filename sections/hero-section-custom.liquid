@@ -37,14 +37,15 @@
  {% endschema %}
 <div>
 <h1>hi</h1>
-{% if section.block.size > 0 %}
-{% for block in blocks %}
-    {% if block.type == 'text' %}
+{% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'text' %}
         <p>{{block.settings.text_line}}</p>
-        {% endif %}
-    {% if block.type == 'image_picker' %}
+    {% when 'block_image' %} 
+
 <img width=500px height="500px" src="{{block.settings.block_image | img_url: 'master'}}" alt="hero image">
-{% endif %}
+{%  else %} 
+<p>Unsuppored block type</p>
+    {% endcase %}
 {% endfor %}
-{% endif %}
 </div>
