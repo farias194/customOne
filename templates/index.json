@@ -15,7 +15,7 @@
         "image_picker_EAANGK": {
           "type": "image_picker",
           "settings": {
-            "block_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg"
+            "block_image": "shopify://shop_images/pexels-shvets-production-7506733.jpg"
           }
         },
         "text_BekyE6": {
@@ -30,7 +30,8 @@
         "text_BekyE6"
       ],
       "settings": {
-        "text_hero": "hello helloe"
+        "text_hero": "hello helloe",
+        "text_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
       }
     },
     "image_banner": {
