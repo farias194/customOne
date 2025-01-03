@@ -21,7 +21,7 @@
         "text_BekyE6": {
           "type": "text",
           "settings": {
-            "text_line": "nnnnn"
+            "text_line": "All Day. Every Day"
           }
         }
       },
@@ -30,8 +30,7 @@
         "text_BekyE6"
       ],
       "settings": {
-        "text_hero": "hello helloe",
-        "text-image": "shopify://shop_images/pexels-shvets-production-7506733.jpg"
+        "text_hero": "hello helloe"
       }
     },
     "image_banner": {
