@@ -12,6 +12,12 @@
     "hero_section_custom": {
       "type": "hero-section-custom",
       "blocks": {
+        "text_exViRN": {
+          "type": "text",
+          "settings": {
+            "text_line": "Vela is an all-in-one skincare solution"
+          }
+        },
         "text_BekyE6": {
           "type": "text",
           "settings": {
@@ -26,6 +32,7 @@
         }
       },
       "block_order": [
+        "text_exViRN",
         "text_BekyE6",
         "image_picker_EAANGK"
       ],
