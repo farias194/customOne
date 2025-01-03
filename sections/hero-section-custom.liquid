@@ -50,8 +50,8 @@
  {% endschema %}
 <div>
     <span>
-<h1>{{settings.text_hero}}</h1>
-<img width="100px" height="100px" src="{{settings.text_image | img_url: 'master'}}" alt="text image">
+<h1>{{section.settings.text_hero}}</h1>
+<img width="100px" height="100px" src="{{section.settings.text_image | img_url: 'master'}}" alt="text image">
 </span>
 <span>
 {% for block in section.blocks %}
