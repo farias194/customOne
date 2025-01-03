@@ -4,7 +4,15 @@
     "name": "Hero Section",
     "settings": [
         {
-
+        "type": "text",
+        "id": "text-hero",
+        "label": "Hero text line",
+        "default": "insert text here!"
+        },
+        {
+            "type": "image_picker",
+            "id": "text-image",
+            "label": "text image"
         }
         
     ],
@@ -36,7 +44,7 @@
 }
  {% endschema %}
 <div>
-<h1>hi</h1>
+<h1>{{section.settings.text-hero}}</h1><img src="{{section.settings.text-image}} | img_url: 'master'" alt="text image">
 {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text' %}
