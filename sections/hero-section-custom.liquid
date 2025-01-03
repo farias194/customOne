@@ -49,11 +49,11 @@
 }
  {% endschema %}
 <div>
-    <span>
+    <div>
 <h1>{{section.settings.text_hero}}</h1>
 <img width="100px" height="100px" src="{{section.settings.text_image | img_url: 'master'}}" alt="text image">
-</span>
-<span>
+</div>
+<div>
 {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text' %}
@@ -66,5 +66,5 @@
 
     {% endcase %}
 {% endfor %}
-</span>
+</div>
 </div>
