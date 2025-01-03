@@ -15,7 +15,7 @@
         "image_picker_EAANGK": {
           "type": "image_picker",
           "settings": {
-            "block_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg"
+            "block_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg"
           }
         },
         "text_BekyE6": {
@@ -30,7 +30,8 @@
         "text_BekyE6"
       ],
       "settings": {
-        "hero_section": "insert text here"
+        "text_hero": "hello helloe",
+        "text-image": "shopify://shop_images/pexels-shvetsa-3852204.jpg"
       }
     },
     "image_banner": {
@@ -253,7 +254,7 @@
     }
   },
   "order": [
-    "hero-section-custom",
+    "hero_section_custom",
     "image_banner",
     "running-text",
     "rich_text",
