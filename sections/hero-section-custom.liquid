@@ -3,17 +3,27 @@
 {
     "name": "Hero Section",
     "settings": [
+
         {
-        "type": "text",
-        "id": "text_hero",
+        "type": "select",
         "label": "Hero text line",
-        "default": "insert text here!"
-        },
-        {
-            "type": "image_picker",
-            "id": "text_image",
-            "label": "text image"
+
+        "id": "div_range",
+        "options": [
+            {
+                "value": "1fr" ,
+                "label": "small"
+                    },
+                    {
+                "value": "3fr" ,
+                "label": "medium"
+                    }
+        ]  ,
+        "default": "medium"
+
+
         }
+    
         
     ],
     "blocks": [
@@ -50,21 +60,31 @@
  {% endschema %}
 <div>
     <div>
-<h1>{{section.settings.text_hero}}</h1>
-<img width="100px" height="100px" src="{{section.settings.text_image | img_url: 'master'}}" alt="text image">
-</div>
-<div>
+
+
+<div  class="container">
+    <div style ="grid-column" : {{section.settings.div_range}}class="text-line">
+
 {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text' %}
-   
         <p>{{block.settings.text_line}}</p>
     {% when 'image_picker' %} 
 <img width=100px height="100px" src="{{block.settings.block_image | img_url : 'master'}}" alt="hero image">
 {% else %} 
 <p>Unsuppored block type</p>
-
+</div>
     {% endcase %}
 {% endfor %}
 </div>
 </div>
+</div>
+
+{% style  %} 
+
+.container{
+    display: grid;
+    gird-template-columns: repeat(5, 1fr)
+    grid-auto-rows: minmax(100px, auto)
+}
+{% endstyle %}
