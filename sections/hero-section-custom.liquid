@@ -49,13 +49,13 @@
 }
  {% endschema %}
 <div>
-<h1>{{settings.text_hero}}</h1><img width="500px" height="500px" src="{{settings.text-image | img_url: 'master'}}" alt="text image">
+<h1>{{settings.text_hero}}</h1><img width="100px" height="100px" src="{{settings.text-image | img_url: 'master'}}" alt="text image">
 {% for block in section.blocks %}
     {% case block.type %}
     {% when 'text' %}
         <p>{{block.settings.text_line}}</p>
     {% when 'image_picker' %} 
-<img width=500px height="500px" src="{{block.settings.block_image | image_url : 'master'}}" alt="hero image">
+<img width=100px height="100px" src="{{block.settings.block_image | image_url : 'master'}}" alt="hero image">
 {% else %} 
 <p>Unsuppored block type</p>
     {% endcase %}
