@@ -12,26 +12,25 @@
     "hero_section_custom": {
       "type": "hero-section-custom",
       "blocks": {
-        "image_picker_EAANGK": {
-          "type": "image_picker",
-          "settings": {
-            "block_image": "shopify://shop_images/pexels-shvets-production-7506733.jpg"
-          }
-        },
         "text_BekyE6": {
           "type": "text",
           "settings": {
             "text_line": "All Day. Every Day"
           }
+        },
+        "image_picker_EAANGK": {
+          "type": "image_picker",
+          "settings": {
+            "block_image": "shopify://shop_images/pexels-shvets-production-7506733.jpg"
+          }
         }
       },
       "block_order": [
-        "image_picker_EAANGK",
-        "text_BekyE6"
+        "text_BekyE6",
+        "image_picker_EAANGK"
       ],
       "settings": {
-        "text_hero": "hello helloe",
-        "text_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
+        "div_range": "1fr"
       }
     },
     "image_banner": {
