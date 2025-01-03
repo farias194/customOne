@@ -58,12 +58,20 @@
     ]
 }
  {% endschema %}
+
+<style>
+    .text-line{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+</style>
 <div>
     <div>
 
 
 <div  class="container">
-    <div style ="grid-column : {{section.settings.div_range}} " class="text-line">
+    <div style ="grid-column : {{section.settings.div_range}}" class="text-line">
 
 {% for block in section.blocks %}
     {% case block.type %}
@@ -77,6 +85,6 @@
 {% endfor %}
 </div>
 </div>
-
+{
 </div>
 </div>
