@@ -47,7 +47,7 @@
 <h1>{{section.settings.text-hero}}</h1><img width="500px" height="500px" src="{{section.settings.text-image}}  | img_url: 'master'" alt="text image">
 {% for block in section.blocks %}
     {% case block.type %}
-    {% when 'text' %}
+    {% when 'text_line' %}
         <p>{{block.settings.text_line}}</p>
     {% when 'block_image' %} 
 
