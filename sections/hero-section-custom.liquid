@@ -51,7 +51,7 @@
         <p>{{block.settings.text_line}}</p>
     {% when 'block_image' %} 
 
-<img width=500px height="500px" src="{{block.settings.block_image}}" alt="hero image">
+<img width=500px height="500px" src="{{block.settings.block_image | img_url : 'small'}}" alt="hero image">
 {%  else %} 
 <p>Unsuppored block type</p>
     {% endcase %}
