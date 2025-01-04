@@ -81,7 +81,7 @@
     {% when 'hero_text_line' %}
         <div class="hero-text-line">
         <p>{{block.settings.text_line}}</p>
-<img width=50px height="50px" src="{{block.settings.block_image2 | img_url : 'master'}}" alt="hero image">
+<img width=50px height="50px" src="{{block.settings.block_image | img_url : 'master'}}" alt="hero image">
 </div>
 {% else %} 
 <p>Unsuppored block type</p>
