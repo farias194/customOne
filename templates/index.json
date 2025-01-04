@@ -18,10 +18,25 @@
             "text_line": "Vela is an all-in-one skincare solution",
             "block_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg"
           }
+        },
+        "hero_text_line_GEfMB3": {
+          "type": "hero_text_line",
+          "settings": {
+            "text_line": "All skincare.",
+            "block_image": "shopify://shop_images/pexels-polina-kovaleva-6543552.jpg"
+          }
+        },
+        "hero_text_line_qYEmfR": {
+          "type": "hero_text_line",
+          "settings": {
+            "text_line": "enter text line here"
+          }
         }
       },
       "block_order": [
-        "hero_text_line_zttjEx"
+        "hero_text_line_zttjEx",
+        "hero_text_line_GEfMB3",
+        "hero_text_line_qYEmfR"
       ],
       "settings": {
         "div_range": "span 3"
