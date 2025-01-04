@@ -27,6 +27,7 @@
         
     ],
     "blocks": [
+
         {
             "type": "image_picker",
             "name": "Image Block",
@@ -43,12 +44,18 @@
                 {
                     "type": "text",
                     "name": "text Line",
-                    "settings": [{
+                    "settings": [
+                    {
                         "id": "text_line",
                         "type": "text",
                         "label": "enter lext line here",
                         "default": "enter text line here"
-                    }]
+                    },{
+                        "id": "block_image2",
+                    "type": "image_picker",
+                    "label": "text_image2"
+                    }
+                    ]
                 }
     ],
     "presets": [
@@ -76,7 +83,7 @@
     <div>
 
 
-<div  class="container">
+<div class="container">
     <div style ="grid-column:{{section.settings.div_range}}" class="text-line">
 
 {% for block in section.blocks %}
