@@ -19,7 +19,7 @@
                 "label": "medium"
                     }
         ]  ,
-        "default": "1"
+        "default": "span 1"
 
 
         }
@@ -30,8 +30,8 @@
 
      
                 {
-                    "type": "text",
-                    "name": "text Line",
+                    "type": "hero_text_line",
+                    "name": "Hero Text Line",
                     "settings": [
                     {
                         "id": "text_line",
@@ -39,6 +39,7 @@
                         "label": "enter lext line here",
                         "default": "enter text line here"
                     },
+
                     {
                         "id": "block_image",
                     "type": "image_picker",
@@ -76,11 +77,12 @@
     <div style ="grid-column:{{section.settings.div_range}};" class="text-line">
 
 {% for block in section.blocks %}
-    {% case block.name %}
-    {% when 'text' %}
+    {% case block.type %}
+    {% when 'hero_text_line' %}
+        <div class="hero-text-line">
         <p>{{block.settings.text_line}}</p>
-        {% when 'image_picker' %}
 <img width=50px height="50px" src="{{block.settings.block_image2 | img_url : 'master'}}" alt="hero image">
+</div>
 {% else %} 
 <p>Unsuppored block type</p>
     {% endcase %}
