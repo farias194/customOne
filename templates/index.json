@@ -24,7 +24,7 @@
         "hero_text_line_zttjEx"
       ],
       "settings": {
-        "div_range": "3fr"
+        "div_range": "span 3"
       }
     },
     "image_banner": {
