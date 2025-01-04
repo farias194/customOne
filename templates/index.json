@@ -12,32 +12,19 @@
     "hero_section_custom": {
       "type": "hero-section-custom",
       "blocks": {
-        "text_exViRN": {
-          "type": "text",
+        "hero_text_line_zttjEx": {
+          "type": "hero_text_line",
           "settings": {
-            "text_line": "Vela is an all-in-one skincare solution"
-          }
-        },
-        "text_BekyE6": {
-          "type": "text",
-          "settings": {
-            "text_line": "All Day. Every Day"
-          }
-        },
-        "image_picker_EAANGK": {
-          "type": "image_picker",
-          "settings": {
-            "block_image": "shopify://shop_images/pexels-shvets-production-7506733.jpg"
+            "text_line": "Vela is an all-in-one skincare solution",
+            "block_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg"
           }
         }
       },
       "block_order": [
-        "text_exViRN",
-        "text_BekyE6",
-        "image_picker_EAANGK"
+        "hero_text_line_zttjEx"
       ],
       "settings": {
-        "div_range": "3fr"
+        "div_range": "span 3"
       }
     },
     "image_banner": {
