@@ -76,9 +76,10 @@
     <div style ="grid-column:{{section.settings.div_range}};" class="text-line">
 
 {% for block in section.blocks %}
-    {% case block.type %}
+    {% case block.name %}
     {% when 'text' %}
         <p>{{block.settings.text_line}}</p>
+        {% when 'image_picker' %}
 <img width=50px height="50px" src="{{block.settings.block_image2 | img_url : 'master'}}" alt="hero image">
 {% else %} 
 <p>Unsuppored block type</p>
