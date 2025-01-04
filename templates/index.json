@@ -29,7 +29,8 @@
         "hero_text_line_qYEmfR": {
           "type": "hero_text_line",
           "settings": {
-            "text_line": "enter text line here"
+            "text_line": "All the time",
+            "block_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
           }
         }
       },
