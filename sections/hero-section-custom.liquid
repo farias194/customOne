@@ -86,8 +86,12 @@
     {% case block.type %}
     {% when 'hero_text_line' %}
         <div class="hero-text-line">
+            <div class="hero-text">
         <p>{{block.settings.text_line}}</p>
+        </div>
+        <div class='hero-image'>
 <img width=50px height="50px" src="{{block.settings.block_image | img_url : 'master'}}" alt="hero image">
+</div>
 </div>
 {% else %} 
 <p>Unsuppored block type</p>
