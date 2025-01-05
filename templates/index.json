@@ -15,7 +15,7 @@
         "hero_text_line_zttjEx": {
           "type": "hero_text_line",
           "settings": {
-            "text_line": "Vela is an all-in-one skincare solution.  .",
+            "text_line": "Vela is an all-in-one skincare solution.",
             "font_weight": "300",
             "block_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg"
           }
@@ -30,7 +30,7 @@
         "hero_text_line_GEfMB3": {
           "type": "hero_text_line",
           "settings": {
-            "text_line": "Pure Radiance,",
+            "text_line": "Pure Radiance",
             "font_weight": "400",
             "block_image": "shopify://shop_images/pexels-polina-kovaleva-6543552.jpg"
           }
