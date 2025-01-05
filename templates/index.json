@@ -35,28 +35,12 @@
             "font_weight": "500",
             "block_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
           }
-        },
-        "hero_text_line_BCNmNp": {
-          "type": "hero_text_line",
-          "settings": {
-            "text_line": "enter text line here",
-            "font_weight": "300"
-          }
-        },
-        "hero_text_line_4EiQ4c": {
-          "type": "hero_text_line",
-          "settings": {
-            "text_line": "Crafted for your skin's unique needs.",
-            "font_weight": "300"
-          }
         }
       },
       "block_order": [
         "hero_text_line_zttjEx",
         "hero_text_line_GEfMB3",
-        "hero_text_line_qYEmfR",
-        "hero_text_line_BCNmNp",
-        "hero_text_line_4EiQ4c"
+        "hero_text_line_qYEmfR"
       ],
       "settings": {
         "div_range": "span 5"
