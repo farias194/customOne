@@ -92,12 +92,16 @@
     .hero-text-line{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;   s
+        flex-wrap: wrap;   
     }
     .hero-text{
         font-size: 5rem;
 
     }
+    .hero-text-line-container{
+        width: 100vw;
+    }
+
 </style>
 
 <script>
@@ -112,7 +116,7 @@
 
 <div class="container">
     <div style ="grid-column:{{section.settings.div_range}};" class="hero-text-line">
-
+<div class="hero-text-line-container">
 {% for block in section.blocks %}
     {% case block.type %}
     {% when 'hero_text_line' %}
@@ -131,6 +135,7 @@
 </div>
 </div>
 
+</div>
 </div>
 </div>
 
