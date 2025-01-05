@@ -43,7 +43,25 @@
                         "label": "enter lext line here",
                         "default": "enter text line here"
                     },
+                    {
+                        "type": "select",
+                        "id": "font-weight",
+                        "label": "font weight",
+                        "default": "light",
+                        "options": [{
+                            "label": "light",
+                        "value": "300"
+                        },
+                    {
+                        "label": "medium",
+                        "value": "400"
 
+                    },
+                        {
+                            "label": "bold",
+                            "value": "500"
+                        }]
+                    },
                     {
                         "id": "block_image",
                     "type": "image_picker",
@@ -63,12 +81,11 @@
 <style>
     .container{
     padding: 0rem 5rem 0 5rem;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        display: flex;
+        flex-direction: row;
         width: 100%;
         height: auto;
      font-family: "Taviraj", serif;
-  font-weight: 100;
   font-style: normal;
 }
     }
@@ -100,7 +117,7 @@
     {% case block.type %}
     {% when 'hero_text_line' %}
         <div class="hero-text-line">
-            <div class="hero-text">
+            <div style="font-weight:{{block.settings.font_weight}};"class="hero-text">
         <p>{{block.settings.text_line}}</p>
         </div>
         <div class='hero-image'>
