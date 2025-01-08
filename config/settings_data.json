@@ -138,7 +138,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "rgba(0,0,0,0.5)",
           "logo": "{{ shop.brand.logo }}",
           "logo_width": 90,
           "logo_position": "top-left",
