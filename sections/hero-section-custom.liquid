@@ -173,13 +173,19 @@
 </div>
 <div>
 </div>
-{%when 'hero_button'%}
-    <button class="hero_button" style="background-color: {{block.settings.button_color}};">  {{block.settings.button_text}}</button>
+
 {% else %} 
 <p>Unsuppored block type</p>
     {% endcase %}
 {% endfor %}
 </div>
+
+<div class="button">
+{% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'hero_button' %}
+        <div class="hero_button" style="background-color: {{settings.block.button_color}}">{{settings.block.button_text}}</div>
+    </div>
 </div>
 
 </div>
