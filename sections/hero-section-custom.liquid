@@ -83,11 +83,13 @@
     .hero-text-line {
         display: flex;
         align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
         margin: 0;
         height: min-content;
     }
     .hero-text {
-        font-size: clamp(3rem, 4vw + 20px, 10rem);
+        font-size: clamp(3rem, 3vw + 20px, 10rem);
         margin: 0;
     }
     .hero-text p {
