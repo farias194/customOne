@@ -186,6 +186,10 @@
     {% when 'hero_button' %}
         <div class="hero_button" style="background-color: {{settings.block.button_color}}">{{settings.block.button_text}}</div>
     </div>
+    {% else %}
+    <p>unsupported block type</p>
+    {%endcase%}
+    {% endfor%}
 </div>
 
 </div>
