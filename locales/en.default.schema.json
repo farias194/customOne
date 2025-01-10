@@ -127,7 +127,8 @@
         },
         
       "transparent":{
-            "label": "transparent"
+            "label": "Transparent",
+            "info": "add a transparent background"
           }
         ,
         "colors_accent_2": {
