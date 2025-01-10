@@ -46,8 +46,8 @@
         "hero_button_TDhHPe": {
           "type": "hero_button",
           "settings": {
-            "button_text": "input button text here",
-            "button_color": "#000000"
+            "button_text": "shop now",
+            "button_color": "#e55454"
           }
         }
       },
