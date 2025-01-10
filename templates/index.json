@@ -42,13 +42,21 @@
             "font_weight": "500",
             "block_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
           }
+        },
+        "hero_button_TDhHPe": {
+          "type": "hero_button",
+          "settings": {
+            "button_text": "shop now",
+            "button_color": "#e55454"
+          }
         }
       },
       "block_order": [
         "hero_text_line_zttjEx",
         "hero_text_line_Yyk3UN",
         "hero_text_line_GEfMB3",
-        "hero_text_line_qYEmfR"
+        "hero_text_line_qYEmfR",
+        "hero_button_TDhHPe"
       ],
       "settings": {
         "div_range": "span 5"
