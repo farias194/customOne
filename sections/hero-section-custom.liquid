@@ -66,17 +66,32 @@
                         "id": "block_image",
                     "type": "image_picker",
                     "label": "text_image"
-                    },
-                    {
-                        "id": "hero_button",
-                        "type": "text",
-                        "label": "button",
-                        "default": "call to action"
-
                     }
                     ]
+    
                   
-                }
+                },
+                
+                    {
+                        "type": "hero_button",
+                        "name" : "Hero Button",
+                        "settings": [
+                            {
+                                "type": "text",
+                                "id": "button_text",
+                                "label": "Button Text",
+                                "default": "input button text here"
+                            },
+                            {
+                                "type": "color",
+                                "id": "button_color",
+                                "label": "Button Color",
+                                "default": "#00000"
+                            }
+
+                        ]
+
+                    }
         
             
         
@@ -158,7 +173,8 @@
 </div>
 <div>
 </div>
-
+{%when 'hero_button'%}
+    <button class="hero_button" style="background-color: {{block.settings.button_color}};">  {{block.settings.button_text}}</button>
 {% else %} 
 <p>Unsuppored block type</p>
     {% endcase %}
