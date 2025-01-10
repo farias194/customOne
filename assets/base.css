@@ -6,7 +6,10 @@
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
-
+.color-transparent_background {
+  --color-background: rgba(0, 0, 0, 0.5);
+  background-color: var(--color-background);
+}
 .color-background-2 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-2);
@@ -18,12 +21,7 @@
   --color-background: var(--color-base-text);
   --gradient-background: rgb(var(--color-base-text));
 }
-.color-transparent {
-  
-    --color-foreground: inherit;
-    --color-background: transparent;
-    --gradient-background: none;
-  }
+
 .color-accent-1 {
   --color-foreground: var(--color-base-solid-button-labels);
   --color-background: var(--color-base-accent-1);

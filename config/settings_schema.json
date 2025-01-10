@@ -40,6 +40,12 @@
         "label": "t:settings_schema.colors.settings.colors_accent_2.label"
       },
       {
+        "type": "color",
+        "id": "transparent_background",
+        "default": "#000000",
+        "label": "t:settings_schema.colors.settings.transparent_background.label"
+      },
+      {
         "id": "gradient_accent_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
