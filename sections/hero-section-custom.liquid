@@ -1,197 +1,136 @@
 {% schema  %} 
-    
-{
-    "name": "Hero Section",
-    "settings": [
-
-        {
-        "type": "select",
-        "label": "Hero text line",
-
-        "id": "div_range",
-        "options": [
+    {
+        "name": "Hero Section",
+        "settings": [
             {
-                "value": "span 1" ,
-                "label": "small"
-                    },
-                    {
-                "value": "span 3" ,
-                "label": "medium"
-                    },
-                    {
-                        "value": "span 5",
-                        "label": "large"
-                    }
-        ]  ,
-        "default": "span 5"
-
-
-        }
-    
-        
-    ],
-    "blocks": [
-
-     
-                {
-                    "type": "hero_text_line",
-                    "name": "Hero Text Line",
-                    "settings": [
+                "type": "select",
+                "label": "Hero text line",
+                "id": "div_range",
+                "options": [
+                    {"value": "span 1", "label": "small"},
+                    {"value": "span 3", "label": "medium"},
+                    {"value": "span 5", "label": "large"}
+                ],
+                "default": "span 5"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "hero_text_line",
+                "name": "Hero Text Line",
+                "settings": [
                     {
                         "id": "text_line",
                         "type": "text",
-                        "label": "enter lext line here",
-                        "default": "enter text line here"
+                        "label": "Enter text line here",
+                        "default": "Enter text line here"
                     },
                     {
                         "type": "select",
                         "id": "font_weight",
-                        "label": "font weight",
+                        "label": "Font Weight",
                         "default": "300",
-                        "options": [{
-                            "label": "light",
-                        "value": "300"
-                        },
-                    {
-                        "label": "medium",
-                        "value": "400"
-
-                    },
-                        {
-                            "label": "bold",
-                            "value": "500"
-                        }]
+                        "options": [
+                            {"label": "Light", "value": "300"},
+                            {"label": "Medium", "value": "400"},
+                            {"label": "Bold", "value": "500"}
+                        ]
                     },
                     {
                         "id": "block_image",
-                    "type": "image_picker",
-                    "label": "text_image"
+                        "type": "image_picker",
+                        "label": "Text Image"
                     }
-                    ]
-    
-                  
-                },
-                
+                ]
+            },
+            {
+                "type": "hero_button",
+                "name": "Hero Button",
+                "settings": [
                     {
-                        "type": "hero_button",
-                        "name" : "Hero Button",
-                        "settings": [
-                            {
-                                "type": "text",
-                                "id": "button_text",
-                                "label": "Button Text",
-                                "default": "input button text here"
-                            },
-                            {
-                                "type": "color",
-                                "id": "button_color",
-                                "label": "Button Color",
-                                "default": "#000000"
-                            }
-
-                        ]
-
+                        "type": "text",
+                        "id": "button_text",
+                        "label": "Button Text",
+                        "default": "Input button text here"
+                    },
+                    {
+                        "type": "color",
+                        "id": "button_color",
+                        "label": "Button Color",
+                        "default": "#000000"
                     }
-        
-            
-        
-    ],
-    
-    "presets": [
-        {
-            "name": "Hero Section"
-        }
-    ]
-}
- {% endschema %}
-
-<style>
-    .container{
-    padding: 2rem clamp(10px, 1vw + 10px, 5rem) 2rem clamp(10px, 1vw + 10px, 5rem);
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-
-        height: auto;
-     font-family: "Taviraj", serif;
-  font-style: normal;
-}
-    
-    .hero-text-line{
-        display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  margin: 0px;
-  height: min-content;
-
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Hero Section"
+            }
+        ]
     }
-    .hero-text{
+    {% endschema %}
+    
+    <style>
+    .container {
+        padding: 2rem clamp(10px, 1vw + 10px, 5rem);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        font-family: "Taviraj", serif;
+        font-style: normal;
+    }
+    .hero-text-line {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: min-content;
+    }
+    .hero-text {
         font-size: clamp(3rem, 2vw + 20px, 7rem);
-        margin: 0px;
-
+        margin: 0;
     }
     .hero-text p {
-        margin: 0px;
+        margin: 0;
     }
-    .hero-text-line-container{
+    .hero-text-line-container {
         width: 100vw;
         display: flex;
         flex-direction: column;
     }
+    .hero_button {
+        background-color: black;
+        padding: 1rem;
+        width: 20%;
+        color: white;
+    }
+    </style>
     
-.hero_button{
-    background-color: black;
-    padding: 1rem;
-    width: 20%;
-    color: white;
-}
-</style>
-
-<script>
-
-
-
-</script>
-
-<div>
-    <div>
-
-
-<div class="container">
-<div class="hero-text-line-container">
-{% for block in section.blocks %}
-    {% case block.type %}
-    {% when 'hero_text_line' %}
-        <div class="hero-text-line">
-            <div style="font-weight:{{block.settings.font_weight}};"class="hero-text">
-        <p>{{block.settings.text_line}}</p>
+    <div class="container">
+        <div class="hero-text-line-container">
+            {% for block in section.blocks %}
+            {% case block.type %}
+            {% when 'hero_text_line' %}
+            <div class="hero-text-line">
+                <div class="hero-text" style="font-weight: {{ block.settings.font_weight }};">
+                    <p>{{ block.settings.text_line }}</p>
+                </div>
+                {% if block.settings.block_image %}
+                <img class="hero-image" width="50" height="50" src="{{ block.settings.block_image | img_url: 'master' }}" alt="Hero image">
+                {% endif %}
+            </div>
+            {% endcase %}
+            {% endfor %}
         </div>
-        <div class='hero-image'>
-<img width=50px height="50px" src="{{block.settings.block_image | img_url : 'master'}}" alt="hero image">
-</div>
-</div>
-<div>
-</div>
-
-{% else %} 
-<p>Unsuppored block type</p>
-    {% endcase %}
-{% endfor %}
-</div>
-
-<div class="button">
-{% for block in section.blocks %}
-    {% case block.type %}
-    {% when 'hero_button' %}
-        <div class="hero_button" style="background-color: {{settings.block.button_color}}">{{settings.block.button_text}}</div>
+        <div class="hero-button-container">
+            {% for block in section.blocks %}
+            {% case block.type %}
+            {% when 'hero_button' %}
+            <div class="hero_button" style="background-color: {{ block.settings.button_color }};">
+                {{ block.settings.button_text }}
+            </div>
+            {% endcase %}
+            {% endfor %}
+        </div>
     </div>
-    {% else %}
-    <p>unsupported block type</p>
-    {%endcase%}
-    {% endfor%}
-</div>
-
-</div>
-</div>
-
+    
