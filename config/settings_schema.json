@@ -41,9 +41,9 @@
       },
       {
         "type": "color",
-        "id": "transparent_background",
+        "id": "transparent",
         "default": "#000000",
-        "label": "t:settings_schema.colors.settings.transparent_background.label"
+        "label": "t:settings_schema.colors.settings.transparent.label"
       },
       {
         "id": "gradient_accent_2",
