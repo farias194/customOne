@@ -125,11 +125,11 @@
         "gradient_accent_1": {
           "label": "Accent 1 gradient"
         },
-        {
-          "transparent_background":{
+        
+      "transparent":{
             "label": "transparent"
           }
-        },
+        ,
         "colors_accent_2": {
           "label": "Accent 2"
         },
