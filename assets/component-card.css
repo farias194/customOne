@@ -115,6 +115,7 @@
   grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr);
   padding: 1rem;
   width: 100%;
+  border: 1.5px solid rgb(45, 45, 45);
   flex-grow: 1;
 }
 
