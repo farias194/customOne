@@ -359,12 +359,20 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    }
+    },
+    
+      "video-grid":{
+        "type": "video-grid",
+
+
+      }
+    
   },
   "order": [
     "hero_section_custom",
     "running-text",
     "rich_text",
+    "video-grid",
     "featured_collection",
     "collage",
     "video",
