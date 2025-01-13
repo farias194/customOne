@@ -1,81 +1,78 @@
-{% schema  %}
-
-{
-    "name": "Video Container",
-    "tag": "section",
-    "class": "video_container",
-    "settings":[
+{% schema %}
     {
-        "type": "range",
-        "id": "columns-desktop",
-        "min": 1,
-        "max": 6,
-        "step": 1,
-        "label": "columns",
-        "default": 1
-
-
-        
-    },
-
-    {
-        "type": "range",
-        "id": "columns-mobile",
-        "label": "columns on mobile",
-        "min": 1,
-        "max": 2,   
-        "default": 1,
-        "step": 1
-        
+      "name": "Video Container",
+      "tag": "section",
+      "class": "video_container",
+      "settings": [
+        {
+          "type": "range",
+          "id": "columns-desktop",
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "label": "Columns (Desktop)",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "columns-mobile",
+          "label": "Columns on Mobile",
+          "min": 1,
+          "max": 2,
+          "default": 1,
+          "step": 1
+        }
+      ],
+      "blocks": [
+        {
+          "type": "video",
+          "name": "Product Video",
+          "settings": [
+            {
+              "type": "url",
+              "id": "video",
+              "label": "Video URL"
+            },
+            {
+              "type": "checkbox",
+              "id": "autoplay-button",
+              "default": false,
+              "label": "Autoplay Button"
+            }
+          ]
+        }
+      ]
     }
-],
-"blocks": [
-    {
-"type": "video",
-"name": "product_video",
-"settings": [ 
-    {
-    "type": "video_url",
-    "id": "video",
-    "label": "video",
-    "default": " ",
-    "accept": [
-        "youtube",
-        "vimeo"
-        
-    ]
-},
-{
-    "type": "checkbox",
-    "id": "autoplay-button",
-    "default": false,
-    "label": "autoplay button"
-
-
-}
-]
-}]
-}
-  {% endschema %}
-<style>
-
-
-
-</style>
-  <div>
-<section class="video_container">
-    <div class="video-grid-desktop" style="--columns: {{section.settings.columns-desktop}}"> 
-
-{%for block in section.blocks%}
-    {%case block.type %}
-    {% when 'video' %}
-<div class="video-card">
-    <video src="{{block.settings.video_url}}" {%if block.settings.autoplay-button = true %} autoplay{%endif%}> </video>
-</div>
-{%endcase%}
-
-{%endfor%}
-</div>
-</section>
-</div>
-
+    {% endschema %}
+    
+    <style>
+    .video-grid-desktop {
+      display: grid;
+      grid-template-columns: repeat(var(--columns, 1), 1fr);
+      gap: 16px;
+    }
+    .video-card {
+      padding: 8px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+    </style>
+    
+    <div>
+      <section class="video_container">
+        <div class="video-grid-desktop" style="--columns: {{ section.settings.columns-desktop }}">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'video' %}
+                <div class="video-card">
+                  <video 
+                    src="{{ block.settings.video }}" 
+                    {% if block.settings.autoplay-button == true %} autoplay {% endif %}>
+                  </video>
+                </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </section>
+    </div>
+    
