@@ -1,6 +1,80 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+    {
+      "name": "Video Container",
+      "tag": "section",
+      "class": "video_container",
+      "settings": [
+        {
+          "type": "range",
+          "id": "columns-desktop",
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "label": "Columns (Desktop)",
+          "default": 1
+        },
+        {
+            "type": "select",
+          "id": "columns-mobile",
+          "label": "Columns on Mobile",
+          "options":[
+            {"value": "1", "label": "one"},
+            {"value": "2",  "label": "two"}
+
+
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "video",
+          "name": "Product Video",
+          "settings": [
+            {
+              "type": "url",
+              "id": "video",
+              "label": "Video URL"
+            },
+            {
+              "type": "checkbox",
+              "id": "autoplay-button",
+              "default": false,
+              "label": "Autoplay Button"
+            }
+          ]
+        }
+      ]
+    }
+    {% endschema %}
+    
+    <style>
+    .video-grid-desktop {
+      display: grid;
+      grid-template-columns: repeat(var(--columns, 1), 1fr);
+      gap: 16px;
+    }
+    .video-card {
+      padding: 8px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+    </style>
+    
+    <div>
+      <section class="video_container">
+        <div class="video-grid-desktop" style="--columns: {{ section.settings.columns-desktop }}">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'video' %}
+                <div class="video-card">
+                  <video 
+                    src="{{ block.settings.video }}" 
+                    {% if block.settings.autoplay-button == true %} autoplay {% endif %}>
+                  </video>
+                </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </section>
+    </div>
+    
