@@ -361,8 +361,8 @@
       }
     },
     
-      "video-grid":{
-        "type": "video-grid",
+      "video-grids":{
+        "type": "video-grids",
 
 
       }
@@ -372,7 +372,7 @@
     "hero_section_custom",
     "running-text",
     "rich_text",
-    "video-grid",
+    "video-grids",
     "featured_collection",
     "collage",
     "video",
