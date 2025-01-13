@@ -1,0 +1,70 @@
+{% schema  %}
+
+{
+    "name": "Video Container",
+    "tag": "section",
+    "class": "video_container",
+    "settings":[
+    {
+        "type": "range",
+        "id": "columns-desktop",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "label": "columns",
+        "default": 1
+
+
+        
+    },
+
+    {
+        "type": "range",
+        "id": "columns-mobile",
+        "label": "columns on mobile",
+        "min": 1,
+        "max": 2,
+        "default": 1,
+        "step": 1
+        
+    }
+],
+"blocks": [
+    {
+"type": "video",
+"name": "product_video",
+"settings": [ 
+    {
+    "type": "video_url",
+    "id": "video",
+    "label": "video",
+    "default": " ",
+    "accept": [
+        "youtube",
+        "vimeo",
+        
+    ]
+},
+{
+    "type": "checkbox",
+    "id": "autoplay-button",
+    "default": "false",
+    "label": "autoplay button"
+
+
+}
+]
+}]
+}
+  {% endschema %}
+<style>
+
+
+
+</style>
+  <div>
+
+
+
+  </div>
+
