@@ -23,7 +23,7 @@
         "id": "columns-mobile",
         "label": "columns on mobile",
         "min": 1,
-        "max": 2,
+        "max": 2,   
         "default": 1,
         "step": 1
         
@@ -63,8 +63,19 @@
 
 </style>
   <div>
+<section class="video_container">
+    <div class="video-grid-desktop" style="--columns: {{section.settings.columns-desktop}}"> 
 
+{%for block in section.blocks%}
+    {%case block.type %}
+    {% when 'video' %}
+<div class="video-card">
+    <video src="{{block.settings.video_url}}" {%if block.settings.autoplay-button = true %} autoplay{%endif%}> </video>
+</div>
+{%endcase%}
 
-
-  </div>
+{%endfor%}
+</div>
+</section>
+</div>
 
