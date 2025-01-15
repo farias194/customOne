@@ -89,8 +89,8 @@
                 <div class="video-card">
                   {% if block.settings.video_type == "uploaded" %}
                     <video 
-                      width="500px" 
-                      height="500px" 
+                      width="100px" 
+                      height="100px" 
                       src="{{ block.settings.uploaded_video }}" 
                       {% if block.settings.autoplay-button %} autoplay {% endif %} 
                       controls muted>
@@ -98,8 +98,8 @@
                     </video>
                   {% elsif block.settings.video_type == "embedded" %}
                     <iframe 
-                      width="500px" 
-                      height="500px" 
+                      width="100px" 
+                      height="100px" 
                       src="{{ block.settings.embedded_video | replace: 'watch?v=', 'embed/' }}" 
                       frameborder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
