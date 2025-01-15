@@ -31,10 +31,26 @@
           "name": "Product Video",
           "settings": [
             {
-              "type": "url",
-              "id": "video",
-              "label": "Video URL"
+              "type": "select",
+              "label": "video type",
+              "id": "video_type",
+              "options": [
+                {"value": "embedded", "label": "embedded"},
+                {"value": "uploaded", "label": "uploaded"}
+              ]
             },
+
+            {
+              "type": "url",
+              "id": "uploaded_video",
+              "label": "uploaded URL"
+            },
+            {
+              "type": "url",
+              "id": "embedded_video",
+              "label": "embedded URL"
+            },
+
             {
               "type": "checkbox",
               "id": "autoplay-button",
@@ -67,10 +83,25 @@
             {% case block.type %}
               {% when 'video' %}
                 <div class="video-card">
-                  <video width="500px" height="500px"width="500px" height="500px"
-                    src="https://www.youtube.com/watch?v=kTVVE1Rgmk8" 
-                    {% if block.settings.autoplay-button == true %} autoplay {% endif %}>
-                  </video>
+                  {% if block.settings.video_type == "uploaded" %}
+                    <video 
+                      width="500px" 
+                      height="500px" 
+                      src="{{ block.settings.uploaded_video }}" 
+                      {% if block.settings.autoplay-button %} autoplay {% endif %} 
+                      controls muted>
+                      Your browser does not support the video tag.
+                    </video>
+                  {% elsif block.settings.video_type == "embedded" %}
+                    <iframe 
+                      width="500px" 
+                      height="500px" 
+                      src="{{ block.settings.embedded_video | replace: 'watch?v=', 'embed/' }}" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen>
+                    </iframe>
+                  {% endif %}
                 </div>
             {% endcase %}
           {% endfor %}
