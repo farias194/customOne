@@ -76,7 +76,9 @@
       border-radius: 8px;
       max-width: fit-content;
     }
-    
+    .videoElement{
+      max-width: 200px;
+    }
     </style>
     
     <div>
@@ -87,7 +89,7 @@
               {% when 'video' %}
                 <div class="video-card">
                   {% if block.settings.video_type == "uploaded" %}
-                    <video 
+                    <video class="videoElement"
                       width="100px" 
                       height="100px" 
                       src="{{ block.settings.uploaded_video }}" 
@@ -96,7 +98,7 @@
                       Your browser does not support the video tag.
                     </video>
                   {% elsif block.settings.video_type == "embedded" %}
-                    <iframe 
+                    <iframe class="videoElement"
                       width="100px" 
                       height="100px" 
                       src="{{ block.settings.embedded_video | replace: 'watch?v=', 'embed/' }}" 
