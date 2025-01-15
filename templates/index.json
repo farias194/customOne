@@ -105,21 +105,27 @@
         "video_i8t9ER": {
           "type": "video",
           "settings": {
-            "video": "https://www.youtube.com/watch?v=kTVVE1Rgmk8",
+            "video_type": "embedded",
+            "uploaded_video": "",
+            "embedded_video": "https://www.youtube.com/watch?v=OCzDl89kB8s",
             "autoplay-button": false
           }
         },
         "video_FmXWLE": {
           "type": "video",
           "settings": {
-            "video": "",
+            "video_type": "embedded",
+            "uploaded_video": "",
+            "embedded_video": "",
             "autoplay-button": false
           }
         },
         "video_8mR4rx": {
           "type": "video",
           "settings": {
-            "video": "",
+            "video_type": "embedded",
+            "uploaded_video": "",
+            "embedded_video": "",
             "autoplay-button": false
           }
         }
