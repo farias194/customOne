@@ -30,10 +30,15 @@
 
 
 {% endschema %}
-
+<style>
+    .about_container{
+        width: 90vw;
+        height: 80vh;
+    }
+</style>
 
 <div >
-<div style = "background-image: url('{{section.settings.about_image |  file_url }}');"></div>
+<div class= "about_container" style = "background-image: url('{{section.settings.about_image |  file_url }}');"></div>
 {% for block in section.blocks %}
     {% case block.type  %}
     {%when 'text' %}
