@@ -1,6 +1,32 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{% schema  %}  
+{
+    "name": "Header",
+    "tag": "section",
+    "class": "hero_section",
+    "settings": [{
+        "type": "image_picker",
+        "id": "about_image",
+        "label": "image_picker"
+        
+    }
+],
+"blocks": [{
+    "type": "text",
+    "name":"text",
+    "settings": [{
+        "type": "text",
+        "default":"insert text here",
+        "id": "about_text",
+        "label": "about text"
+    }]
+}]
+}
+
+
 {% endschema %}
+
+
+<div>
+
+
+</div>
