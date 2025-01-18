@@ -19,14 +19,26 @@
         "id": "about_text",
         "label": "about text"
     }]
-}]
+}],
+
+"presets": [
+    {
+        "name": " About Header Section"
+    }
+]
 }
 
 
 {% endschema %}
 
 
-<div>
+<div >
+<div style = "background-image: url('{{section.settings.about_image |  file_url }}');"></div>
+{% for block in section.blocks %}
+    {% case block.type  %}
+    {%when 'text' %}
 
-
+<h1>{{block.settings.about_text}}</h1>
+{%endcase%}
+{%endfor%}
 </div>
