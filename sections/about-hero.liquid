@@ -32,13 +32,13 @@
 {% endschema %}
 <style>
     .about_container{
-        width: 90vw;
+        width: 100vw;
         height: 80vh;
     }
 </style>
 
 <div >
-<div class= "about_container" style = "background-image: url('{{section.settings.about_image}}');"></div>
+<div class= "about_container" style="background-image: url('{{section.settings.about_image}}');">
 {% for block in section.blocks %}
     {% case block.type  %}
     {%when 'text' %}
@@ -46,4 +46,5 @@
 <h1>{{block.settings.about_text}}</h1>
 {%endcase%}
 {%endfor%}
+</div>
 </div>
