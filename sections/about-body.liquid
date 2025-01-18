@@ -1,0 +1,30 @@
+{% schema  %}  
+{
+    "name": "about body",
+    "tag": "section",
+    "class": "body-section",
+    "settings": [{ 
+        "type": "text",
+        "id": "text-header",
+        "label": "header",
+       "default": "insert header here"
+    },
+    {
+        "type": "text",
+        "id": "text-body",
+        "label": "body",
+        "default": "insert text"
+    }
+]
+    
+    
+}
+
+{% endschema %}
+
+<div>
+
+<h1> {{section.settings.text-header}}</h1>
+<p>{{section.settings.text-body}}</p>
+
+</div>
