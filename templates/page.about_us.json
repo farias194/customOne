@@ -9,23 +9,8 @@
  */
 {
   "sections": {
-    "header": {
-      "type": "header",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "background-1",
-        "logo_width": 100,
-        "logo_position": "middle-left",
-        "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "show_line_separator": true,
-        "enable_sticky_header": true,
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
+   
+    
     "about-hero": {
       "type": "about-hero",
       "blocks": {
@@ -43,38 +28,14 @@
         "about_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
       }
     },
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
-    "footer": {
-      "type": "footer",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "background-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": false,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
+  
+
     "about-body": {
       "type": "about-body"
     }
   },
   "order": [
-    "header",
     "about-hero",
-    "main",
     "about-body",
-    "footer"
   ]
 }
