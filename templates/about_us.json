@@ -1,0 +1,19 @@
+{
+
+    "sections": {
+        "header": {
+            "type": "header"
+        },
+    "about_hero":{
+        "type" :"about_hero"
+    },
+    "footer": {
+        "type" : "footer"
+    }
+    },
+    "order":[
+        "header",
+        "about_hero",
+        "footer"
+    ]
+}
