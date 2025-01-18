@@ -20,7 +20,7 @@
       "type": "header",
       "settings": {}
     },
-    "about_hero": {
+    "about-hero": {
       "type": "about-hero",
       "settings": {}
     },
@@ -31,7 +31,7 @@
   },
   "order": [
     "header",
-    "about_hero",
+    "about-hero",
     "main",
     "footer"
   ]
