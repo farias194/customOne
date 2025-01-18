@@ -1,16 +1,5 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-   
-    
     "about-hero": {
       "type": "about-hero",
       "blocks": {
@@ -28,44 +17,16 @@
         "about_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
       }
     },
-  
-
-    "about-body": {
-      "type": "about-body"
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "about-body": {
       "type": "about-body",
       "settings": {
         "text_header": "Hello we are Vela",
         "text_body": "skincare should celebrate your natural beauty while making self-care easy and effective. Our journey started with a desire to create products that meet the needs of real people—whether it’s soothing sensitive skin, balancing oily complexions, or hydrating dry patches. Inspired by the word “Vela,” meaning sail or beacon, our brand represents guidance and effortless movement toward radiant skin."
       }
-    },
-    "footer": {
-      "type": "footer",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "background-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": false,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "about-hero",
-    "about-body",
+    "about-body"
   ]
 }
