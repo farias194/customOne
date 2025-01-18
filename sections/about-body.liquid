@@ -14,17 +14,40 @@
         "id": "text_body",
         "label": "body",
         "default": "insert text"
+    },
+    {
+        "type": "select",
+        "id": "font_size",
+        "label": "font size",
+        "options": [
+            {"value": "small" , "label" : "small"},
+            {"value": "large" , "label" : "large"},
+            {"value": "medium" , "label" : "medium"}
+        ]
     }
 ]
     
     
 }
 
+
 {% endschema %}
 
-<div>
+<style>
+.aboutBodyContainer{
+--bodyTextsmall : 16px;
+--bodyTextmedium : 2rem;
+--bodyTextlarge : 3rem;
+--headerTextsmall : 32px,
+--headerTextmedium: 3rem,
+--headerTextlarge : 5rem
 
-<h1> {{section.settings.text_header}}</h1>
-<p>{{section.settings.text_body}}</p>
+}
+</style>
+
+<div class = aboutBodyContainer>
+
+<h1 style="font-size: var(--headerText{{section.settings.font_size}});"> {{section.settings.text_header}}</h1>
+<p  style="font-size: var(--bodyText{{section.settings.font_size}});"> {{section.settings.text_body}}</p>
 
 </div>
