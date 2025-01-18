@@ -16,9 +16,23 @@
         "padding_bottom": 28
       }
     },
-    
+    "header": {
+      "type": "header",
+      "settings": {}
+    },
+    "about_hero": {
+      "type": "about-hero",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {}
+    }
   },
   "order": [
-    "main"
+    "header",
+    "about_hero",
+    "main",
+    "footer"
   ]
 }
