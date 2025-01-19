@@ -39,7 +39,15 @@
 
     }]
 }
+
  {% endschema %}
+<style>
+.image img{
+    border-radius: 50%;
+}
+
+</style>
+
 
     <div class="section_container" style="padding: {{section.settings.section_padding}};">
         {% for block in section.blocks %}
@@ -48,7 +56,7 @@
 {{block.settings.title}}</h1>
  </div>
  <div class="image">
-<img width="500" height="500" src= "{{block.settings.value_image |  image_url: master }}"/>
+<img width="200" height="200" src= "{{block.settings.value_image |  image_url: small }}"/>
  </div>
 <div class="text">
 <p>{{block.settings.value_text}}</p>
