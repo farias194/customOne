@@ -1,0 +1,57 @@
+{% schema  %} 
+
+{
+    "name": "Values",
+    "tag": "section",
+    "settings": [{
+        
+        "type": "select",
+        "id": "section_padding",
+        "label": "padding",
+        "options": [
+            {"value": "2rem", "label": "small"},
+            {"value": "4rem", "label": "medium"},
+            {"value": "5rem", "label": "large"}
+
+        ]
+    }],
+    "blocks": [{
+        "type": "values",
+        "name":"title",
+        "settings": [{
+            "type": "text",
+            "id": "title",
+            "label": "title",
+            "default": "enter value here"
+
+        },
+    {
+        "type": "image_picker",
+        "id": "value_image",
+        "label": "image"
+    },
+        {
+            "type": "textarea",
+            "id": "value_text",
+            "label": "a bit about your value",
+            "default": "insert text here"
+        }]
+
+    }]
+}
+ {% endschema %}
+
+    <div class="section_container" style="padding: {{section.settings.section_padding}};">
+        {% for block in section.blocks %}
+ <div class="title">
+    <h1>
+{{block.settings.title}}</h1>
+ </div>
+ <div class="image">
+<img width="500" height="500" src= "{{block.settings.value_image |  image_url: master }}"/>
+ </div>
+<div class="text">
+<p>{{block.settings.value_text}}</p>
+</div>
+{%endfor%}
+    </div>

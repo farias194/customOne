@@ -23,10 +23,14 @@
         "text_header": "Hello we are Vela",
         "text_body": "skincare should celebrate your natural beauty while making self-care easy and effective. Our journey started with a desire to create products that meet the needs of real people—whether it’s soothing sensitive skin, balancing oily complexions, or hydrating dry patches. Inspired by the word “Vela,” meaning sail or beacon, our brand represents guidance and effortless movement toward radiant skin."
       }
+    },
+    "about-values":{
+      "type": "about-values"
     }
   },
   "order": [
     "about-hero",
-    "about-body"
+    "about-body",
+    "about-values"
   ]
 }
