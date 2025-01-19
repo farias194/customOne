@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "about-hero": {
@@ -21,11 +30,28 @@
       "type": "about-body",
       "settings": {
         "text_header": "Hello we are Vela",
-        "text_body": "skincare should celebrate your natural beauty while making self-care easy and effective. Our journey started with a desire to create products that meet the needs of real people—whether it’s soothing sensitive skin, balancing oily complexions, or hydrating dry patches. Inspired by the word “Vela,” meaning sail or beacon, our brand represents guidance and effortless movement toward radiant skin."
+        "text_body": "skincare should celebrate your natural beauty while making self-care easy and effective. Our journey started with a desire to create products that meet the needs of real people—whether it’s soothing sensitive skin, balancing oily complexions, or hydrating dry patches. Inspired by the word “Vela,” meaning sail or beacon, our brand represents guidance and effortless movement toward radiant skin.",
+        "font_size": "small"
       }
     },
-    "about-values":{
-      "type": "about-values"
+    "about-values": {
+      "type": "about-values",
+      "blocks": {
+        "values_4CHHkT": {
+          "type": "values",
+          "settings": {
+            "title": "moisture",
+            "value_image": "shopify://shop_images/pexels-polina-kovaleva-6543552.jpg",
+            "value_text": "allowing for moisture"
+          }
+        }
+      },
+      "block_order": [
+        "values_4CHHkT"
+      ],
+      "settings": {
+        "section_padding": "2rem"
+      }
     }
   },
   "order": [
