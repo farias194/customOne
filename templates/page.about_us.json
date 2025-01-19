@@ -44,10 +44,19 @@
             "value_image": "shopify://shop_images/pexels-polina-kovaleva-6543552.jpg",
             "value_text": "allowing for moisture"
           }
+        },
+        "values_adcYgQ": {
+          "type": "values",
+          "settings": {
+            "title": "enter value here",
+            "value_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg",
+            "value_text": "insert text here"
+          }
         }
       },
       "block_order": [
-        "values_4CHHkT"
+        "values_4CHHkT",
+        "values_adcYgQ"
       ],
       "settings": {
         "section_padding": "2rem"
