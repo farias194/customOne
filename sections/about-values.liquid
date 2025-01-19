@@ -42,15 +42,10 @@
 
  {% endschema %}
 <style>
-    .container{
-        display: flex;
-        width: 100%;
-        align-content: center;
-    }
     .section_container{
         display: flex;
         align-self: center;
-        width: 50vw;
+        width: 70vw;
         height: 60vh;
         flex-direction: column;
         justify-content: center;
@@ -62,9 +57,9 @@
 
 </style>
 
-    <div class="container" >
+    <div class="section_container" style="padding: {{section.settings.section_padding}};">
         {% for block in section.blocks %}
-        <div class="section_container" style="padding: {{section.settings.section_padding}};">
+        <div>
  <div class="title">
     <h1>
 {{block.settings.title}}</h1>
