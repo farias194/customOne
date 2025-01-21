@@ -115,18 +115,18 @@
 <img width="200" height="200" src= "{{block.settings.value_image |  image_url: medium }}"/>
  </div>
  {% elsif block.settings.media =='video' and block.settings.video_type == 'uploaded'%}
-    <video class="videoElement" width='200' width='200'src = "{{block.settings.uploaded_url |  file_url}}" {% if block.settings.autoplay_button %} autoplay {%endif%} muted></video>
-        {% elsif  block.settings.media == 'video' and block.settings.video_type == "embedded" %}
+    <video class="videoElement" width='200' width='200'src = "{{block.settings.uploaded_url}}" {% if block.settings.autoplay_button %} autoplay {%endif%} muted></video>
+        {% elsif  block.settings.media == 'video' and block.settings.video_type == 'embedded' %}
             <iframe 
             width="200" 
             height="200" 
             class="videoElement" 
-            src="{{block.settings.embedded_url |  file_url}}"
+            src="{{block.settings.embedded_url}}"
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-            ></iframe>
+            allowfullscreen></iframe>
  {%endif%}
+ 
 <div class="text">
 <p>{{block.settings.value_text}}</p>
 </div>
