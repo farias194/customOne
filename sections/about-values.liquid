@@ -115,7 +115,14 @@
 <img width="200" height="200" src= "{{block.settings.value_image |  image_url: medium }}"/>
  </div>
  {% elsif block.settings.media =='video' and block.settings.video_type == 'uploaded'%}
-    <video class="videoElement" width='200' width='200'src = "{{block.settings.uploaded_url}}" {% if block.settings.autoplay_button %} autoplay {%endif%} muted></video>
+
+    <video class="videoElement" 
+            width='200' 
+            width='200'
+            src = "{{block.settings.uploaded_url}}" 
+            {% if block.settings.autoplay_button %} autoplay {%endif%} 
+            controls 
+            muted> your browswe does not support video </video>
         {% elsif  block.settings.media == 'video' and block.settings.video_type == 'embedded' %}
             <iframe 
             width="200px" 
