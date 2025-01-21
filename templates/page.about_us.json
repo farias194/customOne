@@ -44,10 +44,10 @@
             "value_image": "shopify://shop_images/pexels-polina-kovaleva-6543552.jpg",
             "value_text": "allowing for moisture",
             "media": "video",
-            "video_type": "embedded",
+            "video_type": "uploaded",
             "uploaded_url": "",
             "embedded_url": "https://www.youtube.com/watch?v=xm7Kb8PY2zk",
-            "autoplay_button": false
+            "autoplay_button": true
           }
         },
         "values_adcYgQ": {
