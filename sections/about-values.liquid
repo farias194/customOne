@@ -110,7 +110,7 @@
     <h1>
 {{block.settings.title}}</h1>
  </div>
- 
+
  {% if block.settings.media == 'image' %}
  <div class="image">
 <img width="200" height="200" src= "{{block.settings.value_image |  image_url: medium }}"/>
@@ -132,7 +132,7 @@
             width="200px" 
             height="200px" 
             class="videoElement" 
-            src="{{block.settings.embedded_url}}"
+            src="{{block.settings.embedded_url | replace: 'watch?v=', 'embed/' }}"
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
