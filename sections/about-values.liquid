@@ -118,8 +118,8 @@
     <video class="videoElement" width='200' width='200'src = "{{block.settings.uploaded_url}}" {% if block.settings.autoplay_button %} autoplay {%endif%} muted></video>
         {% elsif  block.settings.media == 'video' and block.settings.video_type == 'embedded' %}
             <iframe 
-            width="200" 
-            height="200" 
+            width="200px" 
+            height="200px" 
             class="videoElement" 
             src="{{block.settings.embedded_url}}"
             frameborder="0" 
