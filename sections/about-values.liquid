@@ -110,10 +110,12 @@
     <h1>
 {{block.settings.title}}</h1>
  </div>
+ 
  {% if block.settings.media == 'image' %}
  <div class="image">
 <img width="200" height="200" src= "{{block.settings.value_image |  image_url: medium }}"/>
  </div>
+
  {% elsif block.settings.media =='video' and block.settings.video_type == 'uploaded'%}
 
     <video class="videoElement" 
@@ -123,7 +125,9 @@
             {% if block.settings.autoplay_button %} autoplay {% endif %} 
             controls 
             muted> your browswe does not support video </video>
+
         {% elsif  block.settings.media == 'video' and block.settings.video_type == 'embedded' %}
+
             <iframe 
             width="200px" 
             height="200px" 
@@ -132,6 +136,7 @@
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
+
  {% endif %}
  
 <div class="text">
