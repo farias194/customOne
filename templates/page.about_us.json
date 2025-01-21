@@ -42,7 +42,12 @@
           "settings": {
             "title": "moisture",
             "value_image": "shopify://shop_images/pexels-polina-kovaleva-6543552.jpg",
-            "value_text": "allowing for moisture"
+            "value_text": "allowing for moisture",
+            "media": "video",
+            "video_type": "embedded",
+            "uploaded_url": "",
+            "embedded_url": "https://www.youtube.com/watch?v=xm7Kb8PY2zk",
+            "autoplay_button": false
           }
         },
         "values_adcYgQ": {
@@ -50,7 +55,12 @@
           "settings": {
             "title": "enter value here",
             "value_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg",
-            "value_text": "insert text here"
+            "value_text": "insert text here",
+            "media": "image",
+            "video_type": "uploaded",
+            "uploaded_url": "",
+            "embedded_url": "",
+            "autoplay_button": false
           }
         }
       },
