@@ -15,7 +15,8 @@
 
         ]
     }],
-    "blocks": [{
+    "blocks": [ 
+        {
         "type": "values",
         "name":"title",
         "settings": [{
@@ -35,7 +36,47 @@
             "id": "value_text",
             "label": "a bit about your value",
             "default": "insert text here"
-        }]
+        },
+       {
+        "type": "radio",
+        "id": "media",
+        "label": "media_selection",
+        "options": [
+            {"label": "video", "value": "video"},
+            {"label": "image", "value": "image"}
+        ],
+        "default": "image"
+       },
+
+       {
+        "type": "radio",
+       "id": "video_type",
+       "label": "video type",
+       "options": [
+        {"label": "uploaded", "value": "uploaded"},
+        {"label": "embedded" , "value": "embedded"}
+       ]
+    
+    },
+       {
+        "type": "url",
+        "id": "uploaded_url",
+        "label": "uploaded video"
+       },
+       {
+        "type": "url",
+        "id" : "embedded_url",
+        "label": "embedded video"
+       },
+       
+        {
+            "type": "checkbox",
+            "id": "autoplay_button",
+            "label": "autoplay button",
+            "default" : false
+            
+        }
+    ]
 
     }]
 }
@@ -44,7 +85,8 @@
 <style>
     .container{
         display: flex;
-        width: 100vw;
+        width: 100vw;   
+        
         align-content: center;
     }
     .section_container{
@@ -68,9 +110,23 @@
     <h1>
 {{block.settings.title}}</h1>
  </div>
+ {% if block.settings.media == 'image' %}
  <div class="image">
-<img width="200" height="200" src= "{{block.settings.value_image |  image_url: small }}"/>
+<img width="200" height="200" src= "{{block.settings.value_image |  image_url: medium }}"/>
  </div>
+ {% elsif block.settings.media =='video' and block.settings.video_type == 'uploaded'%}
+    <video class="videoElement" width='200' width='200'src = "{{block.settings.uploaded_url |  file_url}}" {% if block.settings.autoplay_button %} autoplay {%endif%} muted></video>
+        {% elsif  block.settings.media == 'video' and block.settings.video_type == "embedded" %}
+            <iframe 
+            width="200" 
+            height="200" 
+            class="videoElement" 
+            src="{{block.settings.embedded_url |  file_url}}"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            ></iframe>
+ {%endif%}
 <div class="text">
 <p>{{block.settings.value_text}}</p>
 </div>
