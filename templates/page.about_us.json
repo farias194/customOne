@@ -37,6 +37,19 @@
     "about-values": {
       "type": "about-values",
       "blocks": {
+        "values_xcr7A6": {
+          "type": "values",
+          "settings": {
+            "title": "enter value here",
+            "value_image": "shopify://shop_images/Fireflyserumbottlebeautyproduct4kphotoglasslightpalebackgroundlightfromsidecloseupta.jpg",
+            "value_text": "insert text here",
+            "media": "image",
+            "video_type": "uploaded",
+            "uploaded_url": "",
+            "embedded_url": "",
+            "autoplay_button": false
+          }
+        },
         "values_4CHHkT": {
           "type": "values",
           "settings": {
@@ -65,6 +78,7 @@
         }
       },
       "block_order": [
+        "values_xcr7A6",
         "values_4CHHkT",
         "values_adcYgQ"
       ],
