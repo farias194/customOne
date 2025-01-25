@@ -85,11 +85,52 @@
       "settings": {
         "section_padding": "5rem"
       }
+    },
+    "image_banner_Qa3cnL": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons_yYKUth": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "heading_88ajMj": {
+          "type": "heading",
+          "settings": {
+            "heading": "hello",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "buttons_yYKUth",
+        "heading_88ajMj"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pexels-shvetsa-3852204.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-right",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "about-hero",
     "about-body",
-    "about-values"
+    "about-values",
+    "image_banner_Qa3cnL"
   ]
 }
