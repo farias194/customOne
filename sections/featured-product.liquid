@@ -546,6 +546,7 @@
 
     </div>
   </div>
+  {% endif %}
 </section>
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -631,13 +632,15 @@
     });
   });
 </script>
-
+  
 {% if product.media.size > 0 %}
   <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
 {% endif %}
 
-{% schema %}
+  
+{%schema%}
+  
 {
   "name": "t:sections.featured-product.name",
   "tag": "section",
@@ -935,4 +938,4 @@
     }
   ]
 }
-{% endschema %}
+{%endschema%}
