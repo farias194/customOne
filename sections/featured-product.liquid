@@ -531,6 +531,21 @@
       </div>
     </product-modal>
   </div>
+  <div>
+{% if section.settings.embedded_video !=blank %}       
+  <div> 
+      <iframe 
+      class="featured-product-video"
+      src="{{section.settings.embedded_video | replace: 'watch?v=', 'embed/' }}"
+      width="100px"
+      height="200px"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+      
+      </iframe>
+
+    </div>
+  </div>
 </section>
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -878,8 +893,15 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
+    },
+    {
+              "type": "url",
+              "id": "embedded_video",
+              "label": "embedded URL"
+            }
   ],
+  
+
   "presets": [
     {
       "name": "t:sections.featured-product.presets.name",
