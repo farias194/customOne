@@ -90,17 +90,18 @@
                 <div class="video-card">
                   {% if block.settings.video_type == "uploaded" %}
                     <video class="videoElement"
-                      width="100px" 
-                      height="100px" 
+                      width="400px" 
+                      height="auto" 
                       src="{{ block.settings.uploaded_video }}" 
                       {% if block.settings.autoplay-button %} autoplay {% endif %} 
                       controls muted>
                       Your browser does not support the video tag.
                     </video>
                   {% elsif block.settings.video_type == "embedded" %}
+
                     <iframe class="videoElement"
-                      width="100px" 
-                      height="100px" 
+                      width="400px" 
+                      height="auto" 
                       src="{{ block.settings.embedded_video | replace: 'watch?v=', 'embed/' }}" 
                       frameborder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
