@@ -260,35 +260,18 @@
             "embedded_video": "",
             "autoplay-button": false
           }
-        },
-        "video_tBeAQE": {
-          "type": "video",
-          "settings": {
-            "video_type": "embedded",
-            "uploaded_video": "",
-            "embedded_video": "",
-            "autoplay-button": false
-          }
-        },
-        "video_EDzCQj": {
-          "type": "video",
-          "settings": {
-            "video_type": "embedded",
-            "uploaded_video": "",
-            "embedded_video": "",
-            "autoplay-button": false
-          }
         }
       },
       "block_order": [
         "video_i8t9ER",
         "video_FmXWLE",
-        "video_8mR4rx",
-        "video_tBeAQE",
-        "video_EDzCQj"
+        "video_8mR4rx"
+      ],
+      "custom_css": [
+        "div{display: flex; flex-direction: row; align-content: center}"
       ],
       "settings": {
-        "columns-desktop": 6,
+        "columns-desktop": 4,
         "columns-mobile": "1"
       }
     },
