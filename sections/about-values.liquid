@@ -14,7 +14,16 @@
             {"value": "5rem", "label": "large"}
 
         ]
-    }],
+    },
+     {
+            "type": "radio",
+            "id": "layout_direction",
+            "label": "layout direction",
+            "options": [
+                {"label" : "vertical" , "value" : "vertical"},
+                {"label" : "horizontal", "value" : "horizontal"}
+            ]
+        }],
     "blocks": [ 
         {
         "type": "values",
@@ -76,9 +85,11 @@
             "default" : false
             
         }
+   
     ]
 
     }]
+   
 }
 
  {% endschema %}
@@ -92,9 +103,6 @@
     .section_container{
         display: flex;
         align-self: center;
-        height: 60vh;
-        flex-direction: column;
-        overflow-x: scroll;
     }
 .image img{
     border-radius: 50%;
@@ -102,7 +110,7 @@
 
 </style>
 <div class="container">
-    <div class="section_container" style="padding: {{section.settings.section_padding}};">
+    <div class="section_container" style="padding: {{section.settings.section_padding}}; flex-direction : {{section.settings.layout_direction}}">
         {% for block in section.blocks %}
         <div>
  <div class="title">
