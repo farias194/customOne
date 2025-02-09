@@ -47,7 +47,7 @@
           "type": "hero_button",
           "settings": {
             "button_text": "shop now",
-            "button_color": "#e55454"
+            "button_color": "#343232"
           }
         }
       },
@@ -268,7 +268,7 @@
         "video_8mR4rx"
       ],
       "custom_css": [
-        "div{display: flex; flex-direction: row; align-content: center}"
+        "div {display: flex; flex-direction: row; align-content: center;}"
       ],
       "settings": {
         "columns-desktop": 4,
