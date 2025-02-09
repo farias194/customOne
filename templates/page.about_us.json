@@ -40,7 +40,7 @@
         "values_xcr7A6": {
           "type": "values",
           "settings": {
-            "title": "enter value here",
+            "title": "perfume",
             "value_image": "shopify://shop_images/Fireflyserumbottlebeautyproduct4kphotoglasslightpalebackgroundlightfromsidecloseupta.jpg",
             "value_text": "insert text here",
             "media": "image",
@@ -83,7 +83,8 @@
         "values_adcYgQ"
       ],
       "settings": {
-        "section_padding": "5rem"
+        "section_padding": "5rem",
+        "layout_direction": "row"
       }
     },
     "image_banner_Qa3cnL": {
