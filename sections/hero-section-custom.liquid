@@ -110,8 +110,21 @@
         width: 100px;
         color: white;
     }
+    .line{
+        
+    }
     </style>
-    
+    <div class="outerContainer">
+            <div class="line"> 
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="10" x2="10" y2="10000" stroke="black" />
+              
+                <!-- If you do not specify the stroke
+                     color the line will not be visible -->
+              </svg>
+              
+            </div>
+
     <div class="container">
         <div class="hero-text-line-container">
             {% for block in section.blocks %}
@@ -138,5 +151,13 @@
             {% endcase %}
             {% endfor %}
         </div>
+
     </div>
-    
+    <div class="line">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="10" x2="10" y2="10000" stroke="black" />
+      
+        <!-- If you do not specify the stroke
+             color the line will not be visible -->
+      </svg> </div>
+    </div>
