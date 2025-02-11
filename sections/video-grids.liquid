@@ -88,11 +88,14 @@
     <div>
       <section class="video_container">
         <div class="video-grid-desktop" style="--columns: {{ section.settings.columns-desktop }}">
+          <button class="prevVideo"> <p><</p> </button>
+          <button class="nextVideo"> <p>></p> </button>
           {% for block in section.blocks %}
             {% case block.type %}
               {% when 'video' %}
                 <div class="video-card">
                   {% if block.settings.video_type == "uploaded" %}
+
                     <video class="videoElement"
                       width="400px" 
                       height="auto" 
