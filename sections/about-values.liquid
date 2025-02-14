@@ -128,14 +128,14 @@
 
  {% if block.settings.media == 'image' %}
  <div class="image">
-<img width="200" height="200" src= "{{block.settings.value_image |  image_url: medium }}"/>
+<img width="150" height="150" src= "{{block.settings.value_image |  image_url: medium }}"/>
  </div>
 
  {% elsif block.settings.media =='video' and block.settings.video_type == 'uploaded'%}
 
     <video class="videoElement" 
-            width='200px' 
-            width='200px'
+            width='150px' 
+            width='150px'
             src = "{{block.settings.uploaded_url}}" 
             {% if block.settings.autoplay_button %} autoplay {% endif %} 
             controls 
@@ -144,8 +144,8 @@
         {% elsif  block.settings.media == 'video' and block.settings.video_type == 'embedded' %}
 
             <iframe 
-            width="200px" 
-            height="200px" 
+            width="150px" 
+            height="150px" 
             class="videoElement" 
             src="{{block.settings.embedded_url | replace: 'watch?v=', 'embed/' }}"
             frameborder="0" 
