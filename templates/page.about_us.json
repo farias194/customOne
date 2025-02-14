@@ -23,15 +23,16 @@
         "text_4m4RfR"
       ],
       "settings": {
-        "about_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
+        "about_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg",
+        "text_positioning": "center"
       }
     },
     "about-body": {
       "type": "about-body",
       "settings": {
-        "text_header": "Hello we are Vela",
+        "text_header": "The Story",
         "text_body": "skincare should celebrate your natural beauty while making self-care easy and effective. Our journey started with a desire to create products that meet the needs of real people—whether it’s soothing sensitive skin, balancing oily complexions, or hydrating dry patches. Inspired by the word “Vela,” meaning sail or beacon, our brand represents guidance and effortless movement toward radiant skin.",
-        "font_size": "medium"
+        "font_size": "small"
       }
     },
     "about-values": {
