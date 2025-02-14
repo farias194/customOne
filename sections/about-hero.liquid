@@ -8,7 +8,18 @@
         "id": "about_image",
         "label": "image_picker"
         
-    }
+    },
+          {
+            "type": "select",
+            "id": "text_positioning",
+            "default": "center",
+            "label": "positioning",
+            "options": [
+                {"value": "center", "label": "center"},
+                {"value": "start", "label": "right"}
+            ]
+        }
+      
   
 ],
 "blocks": [{
@@ -55,11 +66,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
-
+      
         background-position: center;
     }
     .about-text{
         color: white;
+        
     }
 </style>
 
