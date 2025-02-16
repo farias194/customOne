@@ -175,7 +175,7 @@ cart-drawer {
 
 .cart-drawer .drawer__cart-items-wrapper {
   flex-grow: 1;
-  border-bottom: 1px solid black;
+  
 }
 
 .cart-drawer .cart-items, .cart-drawer tbody {
