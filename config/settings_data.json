@@ -139,7 +139,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "rgba(0,0,0,0.5)",
+          "color_scheme": "rgba(255, 99, 71, 0.3)",
           "logo": "{{ shop.brand.logo }}",
           "logo_width": 90,
           "logo_position": "top-left",
