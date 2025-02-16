@@ -1,7 +1,7 @@
 .cart-items td,
 .cart-items th {
   padding: 0;
-  border: none;
+  border: 1px solid black;
 }
 
 .cart-items th {
