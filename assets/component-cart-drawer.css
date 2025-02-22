@@ -274,6 +274,7 @@ cart-drawer-items {
 
 .cart-drawer .cart-item__details {
   width: auto;
+  align-self: center;
   grid-area: details
 }
 
