@@ -212,7 +212,7 @@ cart-drawer-items {
   grid-template:  "media details totals" auto
                   "media details totals" auto
                   "quantity .      ." auto / 
-     150px auto; /* Adjust 150px to match image width */
+     150px 1fr auto; /* Adjust 150px to match image width */
   gap: 1.5rem;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
