@@ -282,7 +282,7 @@ cart-drawer-items {
 .cart-drawer .cart-item__totals {
   pointer-events: none;
   display: flex;
-  grid-area: 'totals'
+  grid-area: totals;
   align-items: flex-start;
   justify-content: flex-end;
 }
