@@ -214,6 +214,7 @@ cart-drawer-items {
                   "quantity details      ." auto / 
      150px 1fr auto; /* Adjust 150px to match image width */
   gap: 1.5rem;
+  align-items: center;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
   margin-bottom: 5px;
