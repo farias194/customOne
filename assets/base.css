@@ -1239,7 +1239,8 @@ summary::-webkit-details-marker {
   top: 0;
   left: 0;
   border-radius: 5%;
-  
+  border: 1px solid black;
+  padding: 1rem;
   height: 100%;
   width: 100%;
 }
