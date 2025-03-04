@@ -91,7 +91,7 @@
     "text_boxes_shadow_blur": 5,
     "media_border_thickness": 7,
     "media_border_color": "#100f0f",
-    "media_border_opacity": 20,
+    "media_border_opacity": 0,
     "media_radius": 24,
     "media_shadow_opacity": 0,
     "media_shadow_horizontal_offset": 0,
