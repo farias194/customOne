@@ -1016,7 +1016,12 @@
         "label": "t:settings_schema.global.settings.thickness.label",
         "default": 1
       },
-  
+      {
+        "type": "color",
+        "id": "media_border_color",
+        "label": "Border Color",
+        
+      },
       {
         "type": "range",
         "id": "media_border_opacity",
