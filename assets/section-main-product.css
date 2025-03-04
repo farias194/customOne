@@ -1245,8 +1245,8 @@ a.product__text {
   flex-shrink: 0;
 }
 
-.product_media-item .media > * {
+.product__media-item .media > * {
 
-  border: 1px solid black;
+  border: 1px, solid, black;
   border-radius: 15%;
 }
