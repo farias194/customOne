@@ -65,11 +65,9 @@
     
     <style>
     .video-grid-desktop {
-      display: grid;
-      max-width: 100%;
-      justify-content: center;
-      grid-template-columns: repeat(var(--columns, 1), 1fr);
-      gap: 16px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
     .video-card {
       padding: 8px;
