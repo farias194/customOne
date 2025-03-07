@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 #MainProduct-{{ section.id }} {
-  border: 2px solid #000; /* Black border */
+  border-bottom: 2px solid black; /* Black border */
   padding: 20px; /* Adds spacing inside the border */
 }
 
