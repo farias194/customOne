@@ -10,8 +10,9 @@
   max-width: 57rem;
   margin: 0 auto;
 }
-#MainProduct{
-  border-bottom: 1px solid black;
+#MainProduct-{{ section.id }} {
+  border: 2px solid #000; /* Black border */
+  padding: 20px; /* Adds spacing inside the border */
 }
 
 .product__media-wrapper {
