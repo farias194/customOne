@@ -232,12 +232,22 @@
             "embedded_video": "",
             "autoplay-button": false
           }
+        },
+        "video_Meq3Ct": {
+          "type": "video",
+          "settings": {
+            "video_type": "embedded",
+            "uploaded_video": "",
+            "embedded_video": "",
+            "autoplay-button": false
+          }
         }
       },
       "block_order": [
         "video_i8t9ER",
         "video_FmXWLE",
-        "video_8mR4rx"
+        "video_8mR4rx",
+        "video_Meq3Ct"
       ],
       "custom_css": [
         "div {display: flex; flex-direction: row; align-content: center;}"
