@@ -64,6 +64,10 @@
     {% endschema %}
     
     <style>
+      .container{
+        align-content: center;
+        display: flex;
+      }
     .video-grid-desktop {
       display: flex;
       flex-direction: row;
@@ -85,7 +89,7 @@
     }
     </style>
     
-    <div>
+    <div class='container'>
       <section class="video_container">
         <div class="video-grid-desktop" style="--columns: {{ section.settings.columns-desktop }}">
           <button class="prevVideo"> <p><</p> </button>
