@@ -108,7 +108,7 @@
 
                     <video class="videoElement"
                       width="600px" 
-                      height="600px" 
+                      height="400px" 
                       src="{{ block.settings.uploaded_video }}" 
                       {% if block.settings.autoplay-button %} autoplay {% endif %} 
                       controls muted>
@@ -118,7 +118,7 @@
 
                     <iframe class="videoElement"
                       width="600px" 
-                      height="600px" 
+                      height="400px" 
                       src="{{ block.settings.embedded_video | replace: 'watch?v=', 'embed/' }}" 
                       frameborder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
