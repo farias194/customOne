@@ -107,7 +107,7 @@
                   {% if block.settings.video_type == "uploaded" %}
 
                     <video class="videoElement"
-                      width="400px" 
+                      width="500px" 
                       height="400px" 
                       src="{{ block.settings.uploaded_video }}" 
                       {% if block.settings.autoplay-button %} autoplay {% endif %} 
@@ -117,7 +117,7 @@
                   {% elsif block.settings.video_type == "embedded" %}
 
                     <iframe class="videoElement"
-                      width="400px" 
+                      width="500px" 
                       height="400px" 
                       src="{{ block.settings.embedded_video | replace: 'watch?v=', 'embed/' }}" 
                       frameborder="0" 
