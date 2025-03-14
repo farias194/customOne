@@ -464,6 +464,8 @@ a.product__text {
 }
 
 .product-form__buttons {
+  display: flex;
+  flex-direction: row;
   max-width: 44rem;
 }
 
