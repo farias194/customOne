@@ -467,6 +467,7 @@ a.product__text {
   display: flex;
   flex-direction: row;
   max-width: 44rem;
+  gap: 1rem;
 }
 
 .product--no-media .product__info-container > modal-opener {
