@@ -43,13 +43,6 @@
             "show_dynamic_checkout": true
           }
         },
-        "text_FXPk74": {
-          "type": "text",
-          "settings": {
-            "text": " Transform your skincare routine with our GlowBox Subscription—a curated selection of our most-loved products, delivered right to your door every month.",
-            "text_style": "body"
-          }
-        },
         "description": {
           "type": "description",
           "settings": {}
@@ -68,7 +61,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "text_FXPk74",
         "description",
         "share"
       ],
