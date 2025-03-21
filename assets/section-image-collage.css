@@ -1,3 +1,7 @@
 .image-collage{
   padding: 20px
 }
+.image-grid__container{
+  display: grid;
+  gap: 10px;
+}
