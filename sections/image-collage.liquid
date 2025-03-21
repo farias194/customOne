@@ -10,7 +10,7 @@
     <div class ="image-collage__item {{ size_class }}">
       {% if block.settings.image != blank %}
         {{ block.settings.image | image_url: width: 1000 | image_tag:
-        loading: lazy,
+        loading: "lazy",
         class: 'image-collage__image'
       }}
       {%  else  %}
