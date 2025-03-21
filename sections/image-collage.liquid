@@ -52,7 +52,7 @@
             "options": [
               {"value": "size-small", "label": "Small (1x1"},
               {"value": "size-medium", "label": "Medium (2x1"},
-              {"value": "size-large", "label": "Large (2x2"},
+              {"value": "size-large", "label": "Large (2x2"}
             ],
             "default": "size-small"
           }
@@ -60,7 +60,16 @@
         ]
       }
     ],
-    
+    "presets": [
+      {
+        "name": "Image Collage",
+        "blocks": [
+          {"type": "image"},
+          {"type": "image"}
+       
+        ]
+      }
+    ]
   }
 {% endschema %}
 
