@@ -3,6 +3,41 @@
 {% schema %}
   {
     "name": "Image Collage",
-    "settings": []
+    "settings": [
+      {
+        "type": "range",
+        "id": "columns_desktop",
+        "min": 2,
+        "max": 6,
+        "step": 1,
+        "default": 3,
+        "label": "Columns on Desktop"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name" : "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Select Image",
+          },
+          {
+            "type": "select",
+            "id": "image_size",
+            "label": "Image Size",
+            "options": [
+              {"value": "size-small", "label": "Small (1x1"},
+              {"value": "size-medium", "label": "Medium (2x1"},
+              {"value": "size-large", "label": "Large (2x2"},
+            ],
+            "default": "size-small"
+          }
+          
+        ]
+      }
+    ]
   }
 {% endschema %}
