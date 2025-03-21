@@ -1,5 +1,7 @@
+{%- liquid assign columns = section.settings.columns_desktop 
+-%}
 
-
+<div class="image-collage image"> </div>
 {% schema %}
   {
     "name": "Image Collage",
@@ -41,7 +43,7 @@
     ],
     "presets": [
       {
-        "name": "Assumetrical Photo Grid",
+        "name": "Image Collage",
         "blocks": [
           {"type": "image"},
           {"type": "image"},
