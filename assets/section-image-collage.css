@@ -16,3 +16,8 @@
   text-align: center;
 
 }
+
+.image-collage__item{
+  overflow: hidden;
+  
+}
