@@ -10,6 +10,15 @@
 .size-medium { grid-column: span 2; grid-row: span 1; }
 .size-large { grid-column: span 2; grid-row: span 2; }
 
+.grid--2-col-desktop { grid-template-columns: repeat(2, 1fr); }
+.grid--3-col-desktop { grid-template-columns: repeat(3, 1fr); }
+.grid--4-col-desktop { grid-template-columns: repeat(4, 1fr); }
+.grid--5-col-desktop { grid-template-columns: repeat(5, 1fr); }
+.grid--6-col-desktop { grid-template-columns: repeat(6, 1fr); }
+
+.grid--1-col-mobile { grid-template-columns: 1fr; }
+.grid--2-col-mobile { grid-template-columns: repeat(2, 1fr); }
+
 .image-collage__placeholder{
   background: #f5f5f5;
   padding: 50px;
