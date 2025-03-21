@@ -1,6 +1,7 @@
+  {{ 'section-image-collage.css' | asset_url | stylesheet_tag }}
+
 {%- liquid assign columns = section.settings.columns_desktop 
 -%}
-  {{ 'section-image-collage.css' | asset_url | stylesheet_tag }}
 
 <div class="image-collage image-collage--{{ section.id }}"> 
 <div class="image-collage__container grid grid--{{ columns }}-col-desktop">
