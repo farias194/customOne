@@ -1,7 +1,25 @@
 {%- liquid assign columns = section.settings.columns_desktop 
 -%}
 
-<div class="image-collage image"> </div>
+<div class="image-collage image-collage--{{ section.id }}"> 
+<div class="image-collage__container grid grid--{{ columns }}-col-desktop">
+  {%- for block in section.blocks -%}
+  {%- assign size_class = block.settings.image_size -%}
+
+    <div class ="image-collage__item {{ size_class }}">
+      {% if block.settings.image != blank %}
+        {{ block.settings.image | image_url: width: 1000 | image_tag:
+        loading: lazy,
+        class: 'image-collage__image'
+      }}
+      {%  else  %}
+      <div class="photo-grid__placeholder"> No Image </div>
+    {%  endif %}
+    </div>
+    {% endfor %}
+</div>
+</div>
+        
 {% schema %}
   {
     "name": "Image Collage",
@@ -55,3 +73,4 @@
     ]
   }
 {% endschema %}
+
