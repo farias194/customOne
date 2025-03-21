@@ -20,7 +20,7 @@
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
     "gradient_background_2": "",
-    "type_header_font": "libre_bodoni_n4",
+    "type_header_font": "noto_serif_n4",
     "heading_scale": 105,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
@@ -141,7 +141,6 @@
         "type": "header",
         "settings": {
           "color_scheme": "rgba(255, 99, 71, 0.3)",
-          "logo": "{{ shop.brand.logo }}",
           "logo_width": 100,
           "logo_position": "top-left",
           "menu": "main-menu",
