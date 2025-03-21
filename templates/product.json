@@ -159,12 +159,21 @@
         "image_zfQ8Vh": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/pexels-shvetsa-3852204.jpg",
             "image_size": "size-small"
           }
         },
         "image_xEmWmX": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/pexels-shvets-production-7506733.jpg",
+            "image_size": "size-small"
+          }
+        },
+        "image_Vek8GR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/kids-beanie.jpg",
             "image_size": "size-small"
           }
         },
@@ -190,6 +199,7 @@
       "block_order": [
         "image_zfQ8Vh",
         "image_xEmWmX",
+        "image_Vek8GR",
         "image_MFMPPN",
         "image_MLwKDK",
         "image_eaxkKa"
