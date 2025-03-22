@@ -61,7 +61,11 @@
   </div>
   <div class = "container--text-container">
   {% if block.settings.review_name %}
-    <h1>{{ block.settings.review_name }}</h1>
+    <h1 class='review-name'>{{ block.settings.review_name }}</h1>
+
+    {% endif %}
+        {% if block.settings.review_text %}
+      <p>{{ block.settings.review_text }}</p>
     {% endif %}
   </div>
   {% endfor %}
