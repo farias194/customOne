@@ -51,8 +51,8 @@
   }
 {% endschema %}
 
-<div class = container>
-  {% for block in section.blocks %}}
+<div class = 'container'>
+  {% for block in section.blocks %}
   <div class = container--image-container>
     {% if block.settings.review_image %}
     <img width = '200' height = '200' src= "{{ block.settings.review_image  | image_url }}" alt="{{ block.settings.review_name }}">
