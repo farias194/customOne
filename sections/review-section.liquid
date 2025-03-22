@@ -6,7 +6,7 @@
     "settings": [
         {
           "type": "text",
-          "id": "review-section",
+          "id": "review_section",
           "label": "Customer Reviews",
           "default": "Customer Reviews"
            
@@ -52,6 +52,7 @@
 {% endschema %}
 
 <div class = 'container'>
+  <h1>{{ section.settings.review_section }}</h1>
   {% for block in section.blocks %}
   <div class = container--image-container>
     {% if block.settings.review_image %}
