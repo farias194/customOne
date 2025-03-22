@@ -187,6 +187,25 @@
       "settings": {
         "columns_desktop": 3
       }
+    },
+    "review_section_TTb3wr": {
+      "type": "review-section",
+      "blocks": {
+        "review_WELtrd": {
+          "type": "review",
+          "settings": {
+            "review_name": "Hank Doofus",
+            "review_text": "review",
+            "review_rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "review_WELtrd"
+      ],
+      "settings": {
+        "review_section": "Customer Reviews"
+      }
     }
   },
   "order": [
@@ -194,6 +213,7 @@
     "multicolumn",
     "image-with-text",
     "product-recommendations",
-    "image_collage_QQpYTd"
+    "image_collage_QQpYTd",
+    "review_section_TTb3wr"
   ]
 }
