@@ -59,6 +59,10 @@
   
       {% endif %} 
   </div>
-  <div class = "container--text-container"></div>
+  <div class = "container--text-container">
+  {% if block.settings.review_name %}
+    <h1>{{ block.settings.review_name }}</h1>
+    {% endif %}
+  </div>
   {% endfor %}
 </div>
