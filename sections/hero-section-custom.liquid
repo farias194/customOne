@@ -167,10 +167,14 @@
 
     <script>
       const images = document.querySelectorAll(.hero-image);
-      const container = document.querySeelctorAll(.container);
+      const container = document.querySelectorAll(.outerContainer);
 
-      const getBackground () => {
-      
-        
-      }
+      images.forEach (img =>{
+        img.addEventListener('mouseover', function(){
+          container.style.backgroundImage = 'url(${this.src}';
+        })
+        img.addEventListener('mouseout', function() {
+          container.style.backgroundImage = 'none'
+        })
+      });
     </script>
