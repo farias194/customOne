@@ -168,11 +168,11 @@
 
     <script>
       const images = document.querySelectorAll('.hero-image');
-      const container = document.querySelectorAll('.container');
+      const container = document.querySelector('.container');
 
       images.forEach (img =>{
         img.addEventListener('mouseover', function(){
-          container.style.backgroundImage = `url(${this.src}`;
+          container.style.backgroundImage = `url(${this.src})`;
           console.log('hi')
         });
         img.addEventListener('mouseout', function() {
