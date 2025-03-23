@@ -173,6 +173,7 @@
       images.forEach (img =>{
         img.addEventListener('mouseover', function(){
           container.style.backgroundImage = `url(${this.src}`;
+          console.log('hi')
         });
         img.addEventListener('mouseout', function() {
           container.style.backgroundImage = 'none';
