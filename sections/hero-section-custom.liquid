@@ -77,9 +77,12 @@
         flex-direction: column;
         width: 100%;
         height: auto;
-        background-size: contain;
+        background-size: cover;
+      background-repeat: no-repeat;
       background-position: center;
         align-items: center;
+            transition: background-image 1s ease-in-out;
+
         font-family: "Taviraj", serif;
         font-style: normal;
     }
@@ -107,7 +110,6 @@
         align-content: center;
         flex-wrap: wrap;
         gap: 10px;
-      transition: background-image 1s ease-in-out;
     }
       
       
