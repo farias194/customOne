@@ -180,6 +180,8 @@
 
       images.forEach (img =>{
         img.addEventListener('mouseover', function(){
+          container.style.transition = 'opacity 0.5s ease-in-out';
+          container.style.opacity = '0';
           container.style.backgroundImage = `url(${this.src})`;
           console.log('hi')
         });
