@@ -186,6 +186,7 @@
           console.log('hi')
         });
         img.addEventListener('mouseout', function() {
+          container.style.transition = 'opacity 0.5s ease-in-out';
           container.style.backgroundImage = 'none';
         });
       });
