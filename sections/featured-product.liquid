@@ -662,12 +662,7 @@
           "default": "Text block",
           "label": "t:sections.featured-product.blocks.text.settings.text.label"
         },
-        {
-          "type": "textarea",
-          "default": "description here",
-          "label": "description",
-          "id": "description"
-        },
+
         {
           "type": "select",
           "id": "text_style",
@@ -716,6 +711,19 @@
           "label": "t:sections.all.heading_size.label"
         }
       ]
+    },
+    {
+          "type": "description",
+          "name": "description",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "textarea",
+              "id": "description",
+              "label": "description",
+              "default": "insert product description here"
+            }
+          ]
     },
     {
       "type": "price",
