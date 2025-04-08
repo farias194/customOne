@@ -112,6 +112,8 @@
                     {{ 'onboarding.product_title' | t }}
                   {%- endif -%}
                 </h2>
+              {%- when 'textarea' %}
+              <div class="product-description"><p>{{ section.settings.description }}</p></div>
               {%- when 'price' -%}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -659,6 +661,12 @@
           "id": "text",
           "default": "Text block",
           "label": "t:sections.featured-product.blocks.text.settings.text.label"
+        },
+        {
+          "type": "textarea",
+          "default": "description here",
+          "label": "description",
+          "id": "description"
         },
         {
           "type": "select",
