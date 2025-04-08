@@ -113,7 +113,7 @@
                   {%- endif -%}
                 </h2>
               {%- when 'description' %}
-              <div class="product-description"><p>{{ section.settings.description }}</p></div>
+              <div class="product-description"><p>{{- block.settings.description -}}</p></div>
               {%- when 'price' -%}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
