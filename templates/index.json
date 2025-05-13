@@ -131,7 +131,7 @@
         "title_8DxMwi": {
           "type": "title",
           "settings": {
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "price_MhghTB": {
@@ -186,8 +186,8 @@
         "media_position": "right",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 12,
-        "padding_bottom": 16,
+        "padding_top": 36,
+        "padding_bottom": 24,
         "embedded_video": ""
       }
     },
@@ -243,70 +243,6 @@
       "settings": {
         "columns-desktop": 4,
         "columns-mobile": "1"
-      }
-    },
-    "featured_product_pmEtKm": {
-      "type": "featured-product",
-      "blocks": {
-        "text_AJ4Ycb": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}Cleaner",
-            "text_style": "uppercase"
-          }
-        },
-        "title_iBbQJA": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h2"
-          }
-        },
-        "price_bYJQcP": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_Ym7CRf": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
-        },
-        "quantity_selector_DNHw7m": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_EQ9PaR": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "share_tE8PGC": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_AJ4Ycb",
-        "title_iBbQJA",
-        "price_bYJQcP",
-        "variant_picker_Ym7CRf",
-        "quantity_selector_DNHw7m",
-        "buy_buttons_EQ9PaR",
-        "share_tE8PGC"
-      ],
-      "settings": {
-        "product": "example-t-shirt",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "media_position": "left",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "embedded_video": ""
       }
     },
     "featured_blog_jVBCkn": {
@@ -383,7 +319,6 @@
     "featured_collection",
     "featured_product_hygVg4",
     "video-grids",
-    "featured_product_pmEtKm",
     "featured_blog_jVBCkn",
     "image_banner_RDJ7Wg"
   ]
