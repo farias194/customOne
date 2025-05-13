@@ -31,9 +31,45 @@
     "about-body": {
       "type": "about-body",
       "settings": {
-        "text_header": "The Story",
+        "text_header": "",
         "text_body": "skincare should celebrate your natural beauty while making self-care easy and effective. Our journey started with a desire to create products that meet the needs of real people—whether it’s soothing sensitive skin, balancing oily complexions, or hydrating dry patches. Inspired by the word “Vela,” meaning sail or beacon, our brand represents guidance and effortless movement toward radiant skin.",
         "font_size": "small"
+      }
+    },
+    "image_with_text_nKgkmF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BtX9w9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Skin First.",
+            "heading_size": "h1"
+          }
+        },
+        "text_7Q3dPz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BtX9w9",
+        "text_7Q3dPz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "about-values": {
@@ -157,6 +193,7 @@
   "order": [
     "about-hero",
     "about-body",
+    "image_with_text_nKgkmF",
     "about-values",
     "featured_product_xHtfr7"
   ]
