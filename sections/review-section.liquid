@@ -1,0 +1,76 @@
+{% schema %}
+  {
+    "name": "Reviews Section",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "text",
+          "id": "review_section",
+          "label": "Customer Reviews",
+          "default": "Customer Reviews"
+           
+        }
+      
+    ],
+      "blocks":[
+      {
+        "type": "review",
+        "name": "Review",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id" : "review_image",
+            "label": "reviewer image"
+          },
+          {
+            "type": "text",
+            "id": "review_name",
+            "label": "reviewer name",
+            "default": "Reviewer Name"
+          },
+          {
+            "type": "textarea",
+            "id": "review_text",
+            "label": "review text",
+            "default": "Insert review here"
+          },
+          {
+            "type": "range",
+            "id": "review_rating",
+            "label": "rating",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "default": 5
+          }
+        ]
+        
+  
+      }
+      ],
+     "presets": [
+    {
+      "name": "Reviews Section",
+      "category": "Testimonials"
+    }
+  ]
+  }
+{% endschema %}
+
+<div class = 'container'>
+  <h1>{{ section.settings.review_section }}</h1>
+  {% for block in section.blocks %}
+  <div class = container--image-container>
+    {% if block.settings.review_image %}
+    <img width = '200' height = '200' src= "{{ block.settings.review_image  | image_url }}" alt="{{ block.settings.review_name }}">
+  
+      {% endif %} 
+  </div>
+  <div class = "container--text-container">
+    <h1 class='review-name'>{{ block.settings.review_name }}</h1>
+
+      <p>{{ block.settings.review_text }}</p>
+  </div>
+  {% endfor %}
+</div>

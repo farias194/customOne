@@ -43,7 +43,7 @@
 {%- endif -%}
 
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
-  <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
+  <div style = "border: 1px solid black;" class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
     <div class="featured-product product grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
         <media-gallery
@@ -55,7 +55,7 @@
           <div id="GalleryViewer-{{ section.id }}" class="product__media-list">
             {%- if product.selected_or_first_available_variant.featured_media != null -%}
               {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-              <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+              <div class="product__media-item"  data-media-id="{{ section.id }}-{{ media.id }}">
                 {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false, media_width: 0.5 %}
               </div>
             {%- endif -%}
@@ -67,7 +67,7 @@
             -%}
             {%- for media in product.media -%}
               {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
-                <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+                <div  class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
                   {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false, media_width: 0.5 %}
                 </div>
               {%- endif -%}
@@ -112,6 +112,8 @@
                     {{ 'onboarding.product_title' | t }}
                   {%- endif -%}
                 </h2>
+              {%- when 'description' %}
+              <div class="product-description"><p>{{- block.settings.description -}}</p></div>
               {%- when 'price' -%}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -660,6 +662,7 @@
           "default": "Text block",
           "label": "t:sections.featured-product.blocks.text.settings.text.label"
         },
+
         {
           "type": "select",
           "id": "text_style",
@@ -708,6 +711,19 @@
           "label": "t:sections.all.heading_size.label"
         }
       ]
+    },
+    {
+          "type": "description",
+          "name": "description",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "textarea",
+              "id": "description",
+              "label": "description",
+              "default": "insert product description here"
+            }
+          ]
     },
     {
       "type": "price",

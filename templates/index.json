@@ -16,7 +16,7 @@
           "type": "hero_text_line",
           "settings": {
             "text_line": "Vela is an all-in-one skincare solution.",
-            "font_weight": "300",
+            "font_weight": "100",
             "block_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg"
           }
         },
@@ -24,7 +24,7 @@
           "type": "hero_text_line",
           "settings": {
             "text_line": "Crafted for your skin's unique need",
-            "font_weight": "300"
+            "font_weight": "100"
           }
         },
         "hero_text_line_GEfMB3": {
@@ -39,7 +39,7 @@
           "type": "hero_text_line",
           "settings": {
             "text_line": "Every Moment. .",
-            "font_weight": "500",
+            "font_weight": "100",
             "block_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
           }
         },
@@ -64,6 +64,7 @@
     },
     "running-text": {
       "type": "running-text",
+      "disabled": true,
       "settings": {
         "running-text": "SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOPSHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP",
         "font_weight": "normal"
@@ -100,14 +101,14 @@
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 7,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
@@ -118,109 +119,77 @@
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
+    "featured_product_hygVg4": {
+      "type": "featured-product",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "text_7aUVnr": {
+          "type": "text",
           "settings": {
-            "collection": ""
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
           }
         },
-        "product": {
-          "type": "product",
+        "title_8DxMwi": {
+          "type": "title",
           "settings": {
-            "product": "",
-            "second_image": false
+            "heading_size": "h0"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "price_MhghTB": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_qzfpAU": {
+          "type": "variant_picker",
           "settings": {
-            "collection": ""
+            "picker_type": "button"
+          }
+        },
+        "text_Qhdf3H": {
+          "type": "text",
+          "settings": {
+            "text": "Unveil your skin’s natural glow with Radiance Revival Hydrating Cream — your daily dose of deep hydration and nourishment. Formulated with a luxurious blend of hyaluronic acid, vitamin C, and botanical extracts, this lightweight yet powerful cream penetrates deep into the skin to replenish moisture, even tone, and enhance elasticity.",
+            "text_style": "body"
+          }
+        },
+        "quantity_selector_4Lzc8Y": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_mF8Bkf": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_cULJqM": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "text_7aUVnr",
+        "title_8DxMwi",
+        "price_MhghTB",
+        "variant_picker_qzfpAU",
+        "text_Qhdf3H",
+        "quantity_selector_4Lzc8Y",
+        "buy_buttons_mF8Bkf",
+        "share_cULJqM"
       ],
+      "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
+        "product": "anti-acne-cleanser",
         "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "right",
+        "hide_variants": false,
+        "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 24,
+        "embedded_video": ""
       }
     },
     "video-grids": {
@@ -252,12 +221,22 @@
             "embedded_video": "",
             "autoplay-button": false
           }
+        },
+        "video_Meq3Ct": {
+          "type": "video",
+          "settings": {
+            "video_type": "embedded",
+            "uploaded_video": "",
+            "embedded_video": "",
+            "autoplay-button": false
+          }
         }
       },
       "block_order": [
         "video_i8t9ER",
         "video_FmXWLE",
-        "video_8mR4rx"
+        "video_8mR4rx",
+        "video_Meq3Ct"
       ],
       "custom_css": [
         "div {display: flex; flex-direction: row; align-content: center;}"
@@ -267,78 +246,14 @@
         "columns-mobile": "1"
       }
     },
-    "featured_product_pmEtKm": {
-      "type": "featured-product",
-      "blocks": {
-        "text_AJ4Ycb": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}Cleaner",
-            "text_style": "uppercase"
-          }
-        },
-        "title_iBbQJA": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h2"
-          }
-        },
-        "price_bYJQcP": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_Ym7CRf": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector_DNHw7m": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_EQ9PaR": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "share_tE8PGC": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_AJ4Ycb",
-        "title_iBbQJA",
-        "price_bYJQcP",
-        "variant_picker_Ym7CRf",
-        "quantity_selector_DNHw7m",
-        "buy_buttons_EQ9PaR",
-        "share_tE8PGC"
-      ],
-      "settings": {
-        "product": "example-t-shirt",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "media_position": "left",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "embedded_video": ""
-      }
-    },
     "featured_blog_jVBCkn": {
       "type": "featured-blog",
       "settings": {
         "heading": "Blog posts",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "blog": "news",
         "post_limit": 3,
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "color_scheme": "background-1",
         "show_image": true,
         "show_date": true,
@@ -403,11 +318,8 @@
     "running-text",
     "rich_text",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn",
+    "featured_product_hygVg4",
     "video-grids",
-    "featured_product_pmEtKm",
     "featured_blog_jVBCkn",
     "image_banner_RDJ7Wg"
   ]

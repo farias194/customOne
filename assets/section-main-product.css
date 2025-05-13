@@ -11,9 +11,12 @@
   margin: 0 auto;
 }
 
+
 .product__media-wrapper {
   padding-left: 0;
 }
+
+
 
 @media screen and (min-width: 750px) {
   .product--thumbnail .product__media-gallery,
@@ -461,7 +464,10 @@ a.product__text {
 }
 
 .product-form__buttons {
+  display: flex;
+  flex-direction: row;
   max-width: 44rem;
+  gap: 1rem;
 }
 
 .product--no-media .product__info-container > modal-opener {

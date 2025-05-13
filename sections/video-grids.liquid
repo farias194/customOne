@@ -64,12 +64,17 @@
     {% endschema %}
     
     <style>
+      .container{
+
+        justify-content: center;
+        display: flex;
+      }
     .video-grid-desktop {
-      display: grid;
-      max-width: 100%;
-      justify-content: center;
-      grid-template-columns: repeat(var(--columns, 1), 1fr);
-      gap: 16px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem
     }
     .video-card {
       padding: 8px;
@@ -77,19 +82,24 @@
       max-width: fit-content;
     }
     .videoElement{
-
+      width: auto;
       max-width: 200px;
     }
     .video_container{
-      width: 100%;
+      max-width: 100%;
+      
+      align-self: center;
     }
+      button{
+        border: none;
+        background: none;
+      }
     </style>
     
-    <div>
+    <div class='container'>
       <section class="video_container">
         <div class="video-grid-desktop" style="--columns: {{ section.settings.columns-desktop }}">
           <button class="prevVideo"> <p><</p> </button>
-          <button class="nextVideo"> <p>></p> </button>
           {% for block in section.blocks %}
             {% case block.type %}
               {% when 'video' %}
@@ -97,8 +107,8 @@
                   {% if block.settings.video_type == "uploaded" %}
 
                     <video class="videoElement"
-                      width="400px" 
-                      height="auto" 
+                      width="600px" 
+                      height="400px" 
                       src="{{ block.settings.uploaded_video }}" 
                       {% if block.settings.autoplay-button %} autoplay {% endif %} 
                       controls muted>
@@ -107,8 +117,8 @@
                   {% elsif block.settings.video_type == "embedded" %}
 
                     <iframe class="videoElement"
-                      width="400px" 
-                      height="auto" 
+                      width="600px" 
+                      height="400px" 
                       src="{{ block.settings.embedded_video | replace: 'watch?v=', 'embed/' }}" 
                       frameborder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -118,6 +128,8 @@
                 </div>
             {% endcase %}
           {% endfor %}
+                      <button class="nextVideo"> <p>></p> </button>
+
         </div>
       </section>
     </div>

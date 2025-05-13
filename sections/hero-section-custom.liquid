@@ -77,7 +77,12 @@
         flex-direction: column;
         width: 100%;
         height: auto;
+        background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
         align-items: center;
+            transition: background-image 2s ease-in-out;
+
         font-family: "Taviraj", serif;
         font-style: normal;
     }
@@ -99,12 +104,15 @@
     .hero-text-line-container {
         max-width: 100%;
         justify-content: center;
+    
         display: flex;
         flex-direction: row;
         align-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
+      
+      
     .hero_button {
         background-color: black;
         padding: 1rem;
@@ -122,6 +130,7 @@
     .outerContainer{
         display: flex;
         flex-direction: row;
+      background-image: 'none';
     }
     </style>
     <div class="outerContainer">
@@ -164,3 +173,31 @@
              color the line will not be visible -->
        </div>
     </div>
+
+    <script>
+      const images = document.querySelectorAll('.hero-image');
+      const container = document.querySelector('.container');
+
+      images.forEach (img =>{
+        img.addEventListener('mouseover', function(){
+          container.style.transition = 'opacity 0.5s ease-in-out';
+          container.style.opacity = '0';
+          setTimeout( () =>{
+               container.style.backgroundImage = `url(${this.src})`;
+          console.log('hi')
+            container.style.opacity = '1';
+          }, 300)
+       
+        });
+        img.addEventListener('mouseout', function() {
+          container.style.transition = 'opacity 0.3s ease-in-out';
+          container.style.opacity = '1';
+          setTimeout(() =>{
+          container.style.backgroundImage = 'none'; 
+
+            container.style.opacity = '1';
+          } , 300);
+         
+        });
+      });
+    </script>
