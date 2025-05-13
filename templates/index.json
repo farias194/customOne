@@ -16,7 +16,7 @@
           "type": "hero_text_line",
           "settings": {
             "text_line": "Vela is an all-in-one skincare solution.",
-            "font_weight": "300",
+            "font_weight": "100",
             "block_image": "shopify://shop_images/pexels-ron-lach-8128059.jpg"
           }
         },
@@ -24,7 +24,7 @@
           "type": "hero_text_line",
           "settings": {
             "text_line": "Crafted for your skin's unique need",
-            "font_weight": "300"
+            "font_weight": "100"
           }
         },
         "hero_text_line_GEfMB3": {
@@ -39,7 +39,7 @@
           "type": "hero_text_line",
           "settings": {
             "text_line": "Every Moment. .",
-            "font_weight": "500",
+            "font_weight": "100",
             "block_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg"
           }
         },
@@ -64,6 +64,7 @@
     },
     "running-text": {
       "type": "running-text",
+      "disabled": true,
       "settings": {
         "running-text": "SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOPSHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP SHOP",
         "font_weight": "normal"
