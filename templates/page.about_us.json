@@ -165,70 +165,6 @@
         "section_padding": "5rem",
         "layout_direction": "row"
       }
-    },
-    "featured_product_xHtfr7": {
-      "type": "featured-product",
-      "blocks": {
-        "text_nND8QD": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_jjyqpc": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_fbFYf9": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_e8T3Wx": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector_jLhx8j": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_hxzahV": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "share_e67qJL": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_nND8QD",
-        "title_jjyqpc",
-        "price_fbFYf9",
-        "variant_picker_e8T3Wx",
-        "quantity_selector_jLhx8j",
-        "buy_buttons_hxzahV",
-        "share_e67qJL"
-      ],
-      "settings": {
-        "product": "anti-acne-cleanser",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "media_position": "left",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 40,
-        "embedded_video": "https://www.youtube.com/watch?v=C6xZDLw6vwM"
-      }
     }
   },
   "order": [
@@ -237,7 +173,6 @@
     "image_with_text_eLH3WN",
     "image_with_text_nKgkmF",
     "rich_text_EM4TMU",
-    "about-values",
-    "featured_product_xHtfr7"
+    "about-values"
   ]
 }
