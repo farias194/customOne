@@ -90,6 +90,29 @@
         "padding_bottom": 4
       }
     },
+    "rich_text_EM4TMU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7DmXzj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Beauty shouldn't come at the cost of the planet or your peace of mind. That’s why we’re committed to: </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_7DmXzj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "about-values": {
       "type": "about-values",
       "blocks": {
@@ -206,29 +229,6 @@
         "padding_bottom": 40,
         "embedded_video": "https://www.youtube.com/watch?v=C6xZDLw6vwM"
       }
-    },
-    "rich_text_EM4TMU": {
-      "type": "rich-text",
-      "blocks": {
-        "text_7DmXzj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Beauty shouldn't come at the cost of the planet or your peace of mind. That’s why we’re committed to: </p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_7DmXzj"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -236,8 +236,8 @@
     "about-body",
     "image_with_text_eLH3WN",
     "image_with_text_nKgkmF",
+    "rich_text_EM4TMU",
     "about-values",
-    "featured_product_xHtfr7",
-    "rich_text_EM4TMU"
+    "featured_product_xHtfr7"
   ]
 }
