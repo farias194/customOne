@@ -118,47 +118,77 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "featured_product_hygVg4": {
+      "type": "featured-product",
       "blocks": {
-        "column2": {
-          "type": "column",
+        "text_7aUVnr": {
+          "type": "text",
           "settings": {
-            "title": "COME SEE WHAT OUR CUSTOMERS SAY",
-            "text": "<p>View videos uploaded by our lovely customers</p>",
-            "link_label": "",
-            "link": ""
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
           }
         },
-        "column_TayFtR": {
-          "type": "column",
+        "title_8DxMwi": {
+          "type": "title",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "heading_size": "h1"
+          }
+        },
+        "price_MhghTB": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_qzfpAU": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "text_Qhdf3H": {
+          "type": "text",
+          "settings": {
+            "text": "Unveil your skin’s natural glow with Radiance Revival Hydrating Cream — your daily dose of deep hydration and nourishment. Formulated with a luxurious blend of hyaluronic acid, vitamin C, and botanical extracts, this lightweight yet powerful cream penetrates deep into the skin to replenish moisture, even tone, and enhance elasticity.",
+            "text_style": "body"
+          }
+        },
+        "quantity_selector_4Lzc8Y": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_mF8Bkf": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_cULJqM": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
       "block_order": [
-        "column2",
-        "column_TayFtR"
+        "text_7aUVnr",
+        "title_8DxMwi",
+        "price_MhghTB",
+        "variant_picker_qzfpAU",
+        "text_Qhdf3H",
+        "quantity_selector_4Lzc8Y",
+        "buy_buttons_mF8Bkf",
+        "share_cULJqM"
       ],
+      "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
+        "product": "anti-acne-cleanser",
         "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "secondary_background": false,
+        "media_position": "right",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 16,
+        "embedded_video": ""
       }
     },
     "video-grids": {
@@ -351,7 +381,7 @@
     "running-text",
     "rich_text",
     "featured_collection",
-    "multicolumn",
+    "featured_product_hygVg4",
     "video-grids",
     "featured_product_pmEtKm",
     "featured_blog_jVBCkn",
