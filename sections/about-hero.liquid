@@ -30,7 +30,27 @@
         "default":"insert text here",
         "id": "about_text",
         "label": "about text"
-    }]
+    },
+       {
+      "type": "select",
+        "id": "text_font_size",
+         "label": "Font Size",
+         "options": [
+           {
+             "value": "1.5rem",
+             "label": "small"
+           },
+            {
+             "value": "2.5rem",
+             "label": "medium"
+           },
+            {
+             "value": "3rem",
+             "label": "large"
+           },
+         ]
+    }
+   ]
 },
 {
     "type": "text_positioning",
@@ -84,7 +104,8 @@ flex-direction: {{section.settings.text_positioning}};">
     {% case block.type  %}
     {%when 'text' %}
 
-<h1 class="about-text">{{block.settings.about_text}}</h1>
+<h1 style = 
+  "font-size : {{block.settings.text-font-size }} }}"class="about-text">{{block.settings.about_text}}</h1>
 {%endcase%}
 {%endfor%}
 </div>
