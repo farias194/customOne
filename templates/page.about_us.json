@@ -165,6 +165,43 @@
         "section_padding": "5rem",
         "layout_direction": "row"
       }
+    },
+    "image_with_text_9jnbQE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4aTbxK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built by Community",
+            "heading_size": "h1"
+          }
+        },
+        "text_ramkH4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vela started as a personal need—but it’s grown with the voices of thousands of customers who asked for better. Every product we make is informed by real feedback, real results, and real people.  We’re here to listen, adapt, and grow alongside you—because skincare is personal, and we don’t believe in one-size-fits-all.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4aTbxK",
+        "text_ramkH4"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_03_24_57_PM.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -173,6 +210,7 @@
     "image_with_text_eLH3WN",
     "image_with_text_nKgkmF",
     "rich_text_EM4TMU",
-    "about-values"
+    "about-values",
+    "image_with_text_9jnbQE"
   ]
 }
