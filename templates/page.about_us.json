@@ -56,6 +56,20 @@
     "image_with_text_nKgkmF": {
       "type": "image-with-text",
       "blocks": {
+        "heading_X3FtUt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Always Intentional.",
+            "heading_size": "h1"
+          }
+        },
+        "heading_aK9W9i": {
+          "type": "heading",
+          "settings": {
+            "heading": "Science Backed.",
+            "heading_size": "h1"
+          }
+        },
         "heading_BtX9w9": {
           "type": "heading",
           "settings": {
@@ -72,10 +86,12 @@
         }
       },
       "block_order": [
+        "heading_X3FtUt",
+        "heading_aK9W9i",
         "heading_BtX9w9",
         "text_7Q3dPz"
       ],
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "Third",
       "settings": {
         "image": "shopify://shop_images/pexels-shvetsa-3852204.jpg",
         "height": "adapt",
