@@ -36,23 +36,6 @@
         "font_size": "medium"
       }
     },
-    "image_with_text_eLH3WN": {
-      "type": "image-with-text",
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/pexels-ron-lach-8128059.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 44,
-        "padding_bottom": 40
-      }
-    },
     "image_with_text_nKgkmF": {
       "type": "image-with-text",
       "blocks": {
@@ -104,6 +87,23 @@
         "mobile_content_alignment": "left",
         "padding_top": 8,
         "padding_bottom": 4
+      }
+    },
+    "image_with_text_eLH3WN": {
+      "type": "image-with-text",
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/pexels-ron-lach-8128059.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 44,
+        "padding_bottom": 40
       }
     },
     "rich_text_EM4TMU": {
@@ -223,8 +223,8 @@
   "order": [
     "about-hero",
     "about-body",
-    "image_with_text_eLH3WN",
     "image_with_text_nKgkmF",
+    "image_with_text_eLH3WN",
     "rich_text_EM4TMU",
     "about-values",
     "image_with_text_9jnbQE"
