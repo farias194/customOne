@@ -156,6 +156,14 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "image_7rAW3C": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/vela.svg",
+              "image_width": 180,
+              "alignment": ""
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -179,6 +187,7 @@
           }
         },
         "block_order": [
+          "image_7rAW3C",
           "footer-0",
           "footer-1",
           "footer-2"
