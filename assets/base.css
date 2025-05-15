@@ -442,6 +442,8 @@ h5,
   .h0 {
     font-size: calc(var(--font-heading-scale) * 5.2rem);
   }
+  .extra-large
+  {font-size:calc(var(--font-heading-scale) * 9.2rem)}
 }
 
 h1,
