@@ -310,6 +310,13 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "custom_image_banner_iQFtVq": {
+      "type": "custom-image-banner",
+      "name": "Custom Image Banner",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_04_04_52_PM.png"
+      }
     }
   },
   "order": [
@@ -320,6 +327,7 @@
     "featured_product_hygVg4",
     "video-grids",
     "featured_blog_jVBCkn",
-    "image_banner_RDJ7Wg"
+    "image_banner_RDJ7Wg",
+    "custom_image_banner_iQFtVq"
   ]
 }
