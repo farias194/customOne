@@ -323,7 +323,7 @@ body,
   background-color: rgb(var(--color-background));
 }
 .color-none{
-  background-color: rgba(var(--color-foreground), 0);
+  background-color: none;
 
 }
 .background-secondary {
