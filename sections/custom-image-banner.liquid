@@ -57,7 +57,7 @@
   
     {% for block in section.blocks %}
   {% case block.type %}
-    { % when  'text'%}
+    {% when 'text'%}
  <h1>{{ block.settings.banner_text }}</h1>
     {% endcase %}
       {% endfor %}
