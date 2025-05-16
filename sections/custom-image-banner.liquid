@@ -47,7 +47,7 @@
         </div>
     {% for blocks in section.blocks %}
   {% if blocks.id == 'banner_text' %}
-  <div class="banner_text">{{ block.settings.banner_text }}</div>
+  <div class="banner_text"> <h1>{{ block.settings.banner_text }}</h1></div>
     {% endif %}
       {% endfor %}
 </div>
