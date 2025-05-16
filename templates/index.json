@@ -298,15 +298,14 @@
         "buttons_pEaj7x"
       ],
       "settings": {
-        "image": "shopify://shop_images/pexels-shvets-production-7506733.jpg",
-        "image_2": "shopify://shop_images/pexels-ron-lach-8128059.jpg",
+        "image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_04_04_52_PM.png",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true

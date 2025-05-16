@@ -322,7 +322,9 @@ body,
   color: rgba(var(--color-foreground), 0.75);
   background-color: rgb(var(--color-background));
 }
-
+.none{
+  background-color: none;
+}
 .background-secondary {
   background-color: rgba(var(--color-foreground), 0.04);
 }
