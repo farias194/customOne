@@ -14,20 +14,35 @@
     ],
     "blocks": [
       {
-        "type": "text",
-        "name": "text",
+        "type": "header",
+        "name": "headline",
         
         "settings": [
           {
-            "type": "textarea",
-            "id": "banner_text",
+            "type": "text",
+            "id": "banner_header",
             "default": "insert text here",
             "label": "Banner Text"
             
           }
+       
         ]
         
-      }
+      },
+         {
+            "type": "body_text",
+            "name": "body",
+            "settings":[
+              {
+                "type": "textarea",
+                "id": "banner_text",
+                "default": "insert text",
+                "label": "banner text",
+                
+                
+              }
+            ]
+          }
     ],
   
    "presets": [
@@ -75,7 +90,12 @@
     {% for block in section.blocks %}
   {% case block.type %}
     {% when 'text'%}
- <h1 class="banner_text">{{ block.settings.banner_text }}</h1>
+    {%  if block.settings.banner_header %}
+ <h1 class="banner_header">{{ block.settings.banner_header }}</h1>
+      {% endif %}
+    {% if block.settings.banner_text %}
+      <p>{{ block.settings.banner_text }}</p>
+      {% endif %}
     {% endcase %}
       {% endfor %}
 </div>
