@@ -33,5 +33,7 @@
 
 <div>
   <div class="image_container">{{ section.settings.image }}</div>
-  <div class="banner_text">{{ block.settings.banner_text }}</div>
+  {% if blocks.id =='text' %}
+  <div class="banner_text">{{ blocks.settings.banner_text }}</div>
+    {% endif %}
 </div>
