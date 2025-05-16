@@ -75,6 +75,12 @@
         "label": "t:settings_schema.colors.settings.colors_background_1.label"
       },
       {
+        "type": "color",
+        "id": "color_none",
+        "label": "none",
+        "default": " #000000"
+      },
+      {
         "id": "gradient_background_1",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_1.label"
