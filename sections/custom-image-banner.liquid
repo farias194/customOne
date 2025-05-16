@@ -15,7 +15,7 @@
     "blocks": [
       {
         "type": "banner_text",
-        "name": "image_text",
+        "name": "Banner Text",
         "settings": [
           {
             "type": "text",
@@ -32,8 +32,15 @@
 {% endschema %}
 
 <div>
-  <div class="image_container">{{ section.settings.image }}</div>
+  <div class="image_container">
+      {%  if section.settings.image %}
+{{ section.settings.image }}
+            {% endif %}
+
+        </div>
+    {% for blocks in section.blocks %}
   {% if blocks.id =='text' %}
-  <div class="banner_text">{{ blocks.settings.banner_text }}</div>
+  <div class="banner_text">{{ block.settings.banner_text }}</div>
     {% endif %}
+      {% endfor %}
 </div>
