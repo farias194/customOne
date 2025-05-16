@@ -86,13 +86,13 @@
             {% endif %}
 
         </div>
-  
+  <div class='text'>
     {% for block in section.blocks %}
   {% case block.type %}
     {% when 'header'%}
  <h1 class="banner_header">{{ block.settings.banner_header }}</h1>
     {% when 'body_text' %}
-      <p>{{ block.settings.banner_text }}</p>
+      <p class="banner_text">{{ block.settings.banner_text }}</p>
     {% endcase %}
       {% endfor %}
 </div>
