@@ -314,15 +314,15 @@
     "custom_image_banner_iQFtVq": {
       "type": "custom-image-banner",
       "blocks": {
-        "banner_text_L6EDJy": {
-          "type": "banner_text",
+        "text_fTTHji": {
+          "type": "text",
           "settings": {
-            "banner_text": "hihisss"
+            "banner_text": "ddd"
           }
         }
       },
       "block_order": [
-        "banner_text_L6EDJy"
+        "text_fTTHji"
       ],
       "name": "Custom Image Banner",
       "settings": {
