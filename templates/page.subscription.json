@@ -15,9 +15,30 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_hero_WJhDiw": {
+      "type": "about-hero",
+      "blocks": {
+        "text_bXVmar": {
+          "type": "text",
+          "settings": {
+            "about_text": "Freshly Curated, Delivered Monthly",
+            "text_font_size": "15rem"
+          }
+        }
+      },
+      "block_order": [
+        "text_bXVmar"
+      ],
+      "name": " About Header Section",
+      "settings": {
+        "about_image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_04_04_52_PM.png",
+        "text_positioning": "center"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_hero_WJhDiw"
   ]
 }
