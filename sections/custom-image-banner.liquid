@@ -1,6 +1,32 @@
 {% schema %}
+  
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Custom Image Banner",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "image"
+      }
+     
+    ],
+    "blocks": [
+      {
+        "type": "banner_text",
+        "name": "image_text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "banner_text",
+            "label": "Banner Text"
+            
+          }
+        ]
+        
+      }
+    ]
   }
+  
 {% endschema %}
