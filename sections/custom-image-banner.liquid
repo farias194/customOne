@@ -44,8 +44,13 @@
     object-fit: contain;
     width: auto;
     height: auto;
+    
+  }
+  .banner_text{
+    position: relative;
   }
   .custom_image_banner_container{
+    position: absolute;
     max-width: 100%;
   }
 </style>
@@ -62,7 +67,7 @@
     {% for block in section.blocks %}
   {% case block.type %}
     {% when 'text'%}
- <h1>{{ block.settings.banner_text }}</h1>
+ <h1 class="banner_text">{{ block.settings.banner_text }}</h1>
     {% endcase %}
       {% endfor %}
 </div>
