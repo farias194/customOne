@@ -39,11 +39,18 @@
   }
   
 {% endschema %}
+<style>
+  .banner_image{
+    object-fit: cover;
+    width: auto;
+    height: auto;
+  }
+</style>
 
 <div>
   <div class="image_container">
       {%  if section.settings.image %}
-<img src="{{ section.settings.image | img_url}}" width="1000px" height="auto">
+<img class="banner_image" src="{{ section.settings.image | img_url}}" width="1000px" height="auto">
             {% endif %}
 
         </div>
