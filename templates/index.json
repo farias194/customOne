@@ -314,6 +314,13 @@
     "custom_image_banner_iQFtVq": {
       "type": "custom-image-banner",
       "blocks": {
+        "button_YmktVH": {
+          "type": "button",
+          "settings": {
+            "banner_button_text": "heythere",
+            "button_link": ""
+          }
+        },
         "header_RK7Hgt": {
           "type": "header",
           "settings": {
@@ -328,6 +335,7 @@
         }
       },
       "block_order": [
+        "button_YmktVH",
         "header_RK7Hgt",
         "body_text_wzbVgX"
       ],
