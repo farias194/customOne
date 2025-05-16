@@ -29,7 +29,7 @@
         ]
         
       },
-         {
+      {
             "type": "body_text",
             "name": "body",
             "settings":[
@@ -42,7 +42,24 @@
                 
               }
             ]
+          },
+      {
+        "type": "button",
+        "name": "Banner Button",
+        "settings": [
+          {
+            "type": "text",
+            "default": "insert CTA here",
+            "id": "banner_button_text",
+            "label": "Button"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "button_link"
           }
+        ]
+      }
     ],
   
    "presets": [
@@ -100,4 +117,16 @@
       <p class="banner_text">{{ block.settings.banner_text }}</p>
     {% endcase %}
       {% endfor %}
+</div>
+  <div class="banner_button">
+{% for block in section.blocks %}
+    {% case block.type %}
+      {%  when 'button' %}
+      {%  if block.settings.button_link and block.settings.button_text %}
+        <a href="{{ block.settings.button_link }}">
+  <h2>{{ block.settings.banner_button_text }} </h2></a>
+    {% endif %}
+    {% endcase %}
+  {% endfor %}
+  </div>
 </div>
