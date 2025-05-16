@@ -317,8 +317,8 @@
         "button_YmktVH": {
           "type": "button",
           "settings": {
-            "banner_button_text": "heytherexxdx",
-            "button_link": "shopify://collections/skincare"
+            "banner_button_text": "Subscribe Now",
+            "button_link": "shopify://pages/subscription"
           }
         },
         "header_RK7Hgt": {
