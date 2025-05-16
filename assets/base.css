@@ -324,7 +324,7 @@ body,
 }
 .none{
   background-color: rgba(var(--color-foreground), 0);
-;
+
 }
 .background-secondary {
   background-color: rgba(var(--color-foreground), 0.04);
