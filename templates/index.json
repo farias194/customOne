@@ -313,6 +313,17 @@
     },
     "custom_image_banner_iQFtVq": {
       "type": "custom-image-banner",
+      "blocks": {
+        "banner_text_L6EDJy": {
+          "type": "banner_text",
+          "settings": {
+            "banner_text": "hihi"
+          }
+        }
+      },
+      "block_order": [
+        "banner_text_L6EDJy"
+      ],
       "name": "Custom Image Banner",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_04_04_52_PM.png"
