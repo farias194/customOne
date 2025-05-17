@@ -234,24 +234,52 @@
         "subscription_option_tMqMRE": {
           "type": "subscription_option",
           "settings": {
-            "subscription_name": "Subscription Header",
-            "subscription_benefit": "Billed monthly- Cancel anytime",
+            "subscription_name": "Monthly",
+            "subscription_benefit": "mBilled monthly- Cancel anytime",
             "subscription_benefit_2": "  Perfect for testing the waters or treating yourself month-to-month.",
             "subscription_benefit_3": "Full flexibility—pause, skip, or cancel at any time",
             "subscription_benefit_4": "Free U.S. shipping",
             "subscription_benefit_5": "No commitment, all glow ",
+            "subscription_price": "$20",
+            "color_scheme": "green"
+          }
+        },
+        "subscription_option_ydtdcJ": {
+          "type": "subscription_option",
+          "settings": {
+            "subscription_name": "Subscription Header",
+            "subscription_benefit": "",
+            "subscription_benefit_2": "",
+            "subscription_benefit_3": "",
+            "subscription_benefit_4": "",
+            "subscription_benefit_5": "",
+            "subscription_price": "$0.0",
+            "color_scheme": "green"
+          }
+        },
+        "subscription_option_QBj9JD": {
+          "type": "subscription_option",
+          "settings": {
+            "subscription_name": "Subscription Header",
+            "subscription_benefit": "",
+            "subscription_benefit_2": "",
+            "subscription_benefit_3": "",
+            "subscription_benefit_4": "",
+            "subscription_benefit_5": "",
             "subscription_price": "$0.0",
             "color_scheme": "green"
           }
         }
       },
       "block_order": [
-        "subscription_option_tMqMRE"
+        "subscription_option_tMqMRE",
+        "subscription_option_ydtdcJ",
+        "subscription_option_QBj9JD"
       ],
       "name": "Subscription Multicolumn",
       "settings": {
         "section_name": "Subscription",
-        "section_color_scheme": "accent",
+        "section_color_scheme": "light",
         "section_padding": "medium"
       }
     }
