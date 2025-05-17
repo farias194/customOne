@@ -109,26 +109,20 @@
   
 </style>
 
-<div>
-  <div>
-<h1>{{ section.settings.section_name }}</h1>
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'subscription_option' %}
-    <div class='subscription_options__container'>
-      <div class="subscription_option_container_option-{{ block.settings.color_scheme }}">
-        <h1>{{ block.settings.subscription_name }}</h1>
-        {% for block in section.blocks %}
-          {% if block.type == 'subscription_benefit' %}
-          <p>{{ block.settings.subscription_benefit }}</p>
+<section class="subscription-section color-scheme-{{ section.settings.section_color_scheme }} padding-{{ section.settings.section_padding }}">
+  <div class="page-width">
+    <h1>{{ section.settings.section_name }}</h1>
+
+    <div class="subscription_options__container">
+      {% for block in section.blocks %}
+        {% if block.type == 'subscription_option' %}
+          <div class="subscription_option_container option-{{ block.settings.color_scheme }}">
+            <h2>{{ block.settings.subscription_name }}</h2>
+            <p>{{ block.settings.subscription_benefit }}</p>
+            <p><strong>{{ block.settings.subscription_price }}</strong></p>
+          </div>
         {% endif %}
-          {% endfor %}
-      </div>
-      
-    </div> 
-              
-        {% endcase %}
       {% endfor %}
-      
+    </div>
   </div>
-</div>
+</section>
