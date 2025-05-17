@@ -52,25 +52,25 @@
         },
            {
           "type": "text",
-          "id": "subscription_benefit-2",
+          "id": "subscription_benefit_2",
           "label": "Subscription Benefit",
           "default": "Why you should choose this option"
         },
            {
           "type": "text",
-          "id": "subscription_benefit-3",
+          "id": "subscription_benefit_3",
           "label": "Subscription Benefit",
           "default": "Why you should choose this option"
         },
            {
           "type": "text",
-          "id": "subscription_benefit-4",
+          "id": "subscription_benefit_4",
           "label": "Subscription Benefit",
           "default": "Why you should choose this option"
         },
            {
           "type": "text",
-           "id": "subscription_benefit-5",
+           "id": "subscription_benefit_5",
           "label": "Subscription Benefit",
           "default": "Why you should choose this option"
         },
@@ -149,6 +149,23 @@
             <p>{{ block.settings.subscription_benefit }}</p>
           
  {% endif %}
+            {%   if  "block.settings.subscription_benefit_2" != blank%}
+              <p>{{ block.settings.subscription_benefit_2 }}</p>
+
+              {% endif %}
+          {%   if  "block.settings.subscription_benefit_3" != blank%}
+              <p>{{ block.settings.subscription_benefit_3 }}</p>
+
+              {% endif %}
+           {%   if  "block.settings.subscription_benefit_4" != blank%}
+              <p>{{ block.settings.subscription_benefit_4 }}</p>
+
+              {% endif %}
+           {%   if  "block.settings.subscription_benefit_5" != blank%}
+              <p>{{ block.settings.subscription_benefit_5 }}</p>
+
+              {% endif %}
+
             <p><strong>{{ block.settings.subscription_price }}</strong></p>
           </div>
         {% endif %}
