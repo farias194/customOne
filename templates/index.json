@@ -295,27 +295,6 @@
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_04_04_52_PM.png"
       }
-    },
-    "review_section_ChUUQg": {
-      "type": "review-section",
-      "blocks": {
-        "review_3wqAqH": {
-          "type": "review",
-          "settings": {
-            "review_image": "shopify://shop_images/Firefly_elderly_woman_smiling_3-4_pose_looking_at_camera_4k_fashion_photoshoot_applying_makeup_52458.jpg",
-            "review_name": "Reviewer Name",
-            "review_text": "\"A calm moment in a box.\"  I didn’t think I’d look forward to skincare showing up at my door—but the Vela Box feels like a monthly care package from my future self. The products are gentle, high quality, and actually get used.  — Maya G., Brooklyn, NY",
-            "review_rating": 5
-          }
-        }
-      },
-      "block_order": [
-        "review_3wqAqH"
-      ],
-      "name": "Reviews Section",
-      "settings": {
-        "review_section": "Customer Reviews"
-      }
     }
   },
   "order": [
@@ -326,7 +305,6 @@
     "featured_product_hygVg4",
     "video-grids",
     "featured_blog_jVBCkn",
-    "custom_image_banner_iQFtVq",
-    "review_section_ChUUQg"
+    "custom_image_banner_iQFtVq"
   ]
 }
