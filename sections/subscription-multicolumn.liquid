@@ -88,7 +88,7 @@
 <h1>{{ section.settings.section_name }}</h1>
     {% for block in section.blocks %}
       {% case block.type %}
-        {% if 'subscription_option' %}
+        {% when 'subscription_option' %}
     <div class='subscription_options__container'>
       <div class="subscription_option_container_option-{{ block.settings.color_scheme }}">
         
@@ -97,7 +97,7 @@
       </div>
       
     </div> 
-              {% endif %}
+              
         {% endcase %}
       {% endfor %}
       
