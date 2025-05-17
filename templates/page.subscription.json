@@ -235,11 +235,11 @@
           "type": "subscription_option",
           "settings": {
             "subscription_name": "Monthly",
-            "subscription_benefit": "mBilled monthly- Cancel anytime",
-            "subscription_benefit_2": "  Perfect for testing the waters or treating yourself month-to-month.",
-            "subscription_benefit_3": "Full flexibility—pause, skip, or cancel at any time",
-            "subscription_benefit_4": "Free U.S. shipping",
-            "subscription_benefit_5": "No commitment, all glow ",
+            "subscription_benefit": "<p>mBilled monthly- Cancel anytime</p>",
+            "subscription_benefit_2": "<p>  Perfect for testing the waters or treating yourself month-to-month.</p>",
+            "subscription_benefit_3": "<p>Full flexibility—pause, skip, or cancel at any time</p>",
+            "subscription_benefit_4": "<p>Free U.S. shipping</p>",
+            "subscription_benefit_5": "<p>No commitment, all glow </p>",
             "subscription_price": "$20",
             "color_scheme": "green"
           }
@@ -248,9 +248,9 @@
           "type": "subscription_option",
           "settings": {
             "subscription_name": "3 Months",
-            "subscription_benefit": "Early product previews + exclusive discounts ",
-            "subscription_benefit_2": "Priority access to limited editions",
-            "subscription_benefit_3": "3 monthly boxes, billed upfront",
+            "subscription_benefit": "<ul><li>Early product previews + exclusive discounts </li></ul>",
+            "subscription_benefit_2": "<p>Priority access to limited editions</p><p></p><p></p>",
+            "subscription_benefit_3": "<p>3 monthly boxes, billed upfront</p>",
             "subscription_benefit_4": "",
             "subscription_benefit_5": "",
             "subscription_price": "$0.0",
