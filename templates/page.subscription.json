@@ -130,6 +130,49 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_8bLeap": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8xcpak": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Made for All Skin</p>",
+            "heading_size": "hxl"
+          }
+        },
+        "text_jVqqAj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you’re breaking out, calming down, or leveling up your glow—each Vela Box is curated to be universal, gentle, and effective across skin types.</p>"
+          }
+        },
+        "button_tPFCCX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Subscribe Now",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8xcpak",
+        "text_jVqqAj",
+        "button_tPFCCX"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -137,6 +180,7 @@
     "about_hero_WJhDiw",
     "rich_text_pyz9MP",
     "image_banner_JUXTdB",
-    "multicolumn_pz74ih"
+    "multicolumn_pz74ih",
+    "rich_text_8bLeap"
   ]
 }
