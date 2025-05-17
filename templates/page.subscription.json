@@ -35,10 +35,34 @@
         "about_image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_04_04_52_PM.png",
         "text_positioning": "center"
       }
+    },
+    "rich_text_pyz9MP": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ifbWHT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unveil your skin’s natural glow with Radiance Revival Hydrating Cream — your daily dose of deep hydration and nourishment. Formulated with a luxurious blend of hyaluronic acid, vitamin C, and botanical extracts, this lightweight yet powerful cream penetrates deep into the skin to replenish moisture, even tone, and enhance elasticity.Perfect for all skin types, its silky texture melts into the skin without leaving a greasy residue, making it an ideal base for makeup or a soothing night treatment. Say goodbye to dullness and dryness — and hello to a smooth, dewy complexion that radiates health from within.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ifbWHT"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "about_hero_WJhDiw"
+    "about_hero_WJhDiw",
+    "rich_text_pyz9MP"
   ]
 }
