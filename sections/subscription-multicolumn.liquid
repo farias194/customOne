@@ -91,10 +91,12 @@
         {% when 'subscription_option' %}
     <div class='subscription_options__container'>
       <div class="subscription_option_container_option-{{ block.settings.color_scheme }}">
-        
         <h1>{{ block.settings.subscription_name }}</h1>
-        
+        {% for block in section.blocks %}
+          {% if block.type == 'subscription_benefit' %}
           <p>{{ block.settings.subscription_benefit }}</p>
+        {% endif %}
+          {% endfor %}
       </div>
       
     </div> 
