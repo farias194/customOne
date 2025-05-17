@@ -259,9 +259,10 @@
         },
         "subscription_option_QBj9JD": {
           "type": "subscription_option",
+          "name": "6 Months",
           "settings": {
-            "subscription_name": "Subscription Header",
-            "subscription_benefit": "",
+            "subscription_name": "6 months",
+            "subscription_benefit": "<ul><li>Extra gift in your first box (Vela skincare tool or exclusive item)</li><li>VIP access to new launches & seasonal sets  🔗 [ Subscribe Luxe ]<br/>Locked-in savings for 6 months<br/>VIP access to new launches & seasonal sets  🔗 [ Subscribe Luxe ]</li></ul>",
             "subscription_benefit_2": "",
             "subscription_benefit_3": "",
             "subscription_benefit_4": "",
