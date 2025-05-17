@@ -230,6 +230,24 @@
     },
     "subscription_multicolumn_aijV7x": {
       "type": "subscription-multicolumn",
+      "blocks": {
+        "subscription_option_tMqMRE": {
+          "type": "subscription_option",
+          "settings": {
+            "subscription_name": "Subscription Header",
+            "subscription_benefit": "Billed monthly- Cancel anytime",
+            "subscription_benefit_2": "",
+            "subscription_benefit_3": "",
+            "subscription_benefit_4": "",
+            "subscription_benefit_5": "",
+            "subscription_price": "$0.0",
+            "color_scheme": "green"
+          }
+        }
+      },
+      "block_order": [
+        "subscription_option_tMqMRE"
+      ],
       "name": "Subscription Multicolumn",
       "settings": {
         "section_name": "Subscription",
