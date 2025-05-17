@@ -281,7 +281,7 @@
       "settings": {
         "section_name": "Subscription",
         "section_color_scheme": "light",
-        "section_padding": "medium"
+        "section_padding": "large"
       }
     }
   },
