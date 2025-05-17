@@ -1,79 +1,82 @@
 {% schema %}
-  {
-    "name": "Subscription Multicolumn",
-    "tag": "section",
-    "class": "section",
-    
-    "settings": [
-      {
-        "type": "text",
-        "id": "section_name",
-        "label": "header",
-        "default": "Subscription"
-        
-      },
-      {
-        "type": "select",
-        "id": "section_color_scheme",
-        "label": "Color Scheme",
-        "options": [
-          {"value" : "light", "label": "Light"},
-          {"value": "dark", "label": "Dark"},
-          {"value": "accent", "label": "Accent"}
-        ],
-        "default": "accent"
-      },
-      {
-        "type": "select",
-        "id": "section_padding",
-        "label": "section_padding",
-        "options": [
-          {"value": "small", "label": "Small"},
-          {"value": "medium", "label": "Medium"},
-          {"value": "large", "label": "Large"}
-        ]
-      }
-    ],
-    "blocks": [
-      {
-      "type": "subscrption_option",
-        "name": "Subscription Option",
-        "settings": [
-          {
-        "type": "text",
-        "id": "subscription_name",
-        "label": "header",
-        "default": "Subscription Header"
-        
-      },
-      {
-        "type": "text",
-        "id": "subscription_benefit",
-        "label": "Subscription Benefit",
-        "default": "Why you should choose this option"
-      },
-      {
-        "type": "text",
-        "id": "subscription_price",
-        "label": "subscription price",
-        "default": "$0.0"
-            
-      },
-      {
-        "type": "select",
-        "id": "color_scheme",
-        "label": "Color Scheme",
-        "options": [
-          {"value" : "light", "label": "Light"},
-          {"value": "blue", "label": "Blue"},
-          {"value": "green", "label": "Green"}
-        ],
-        "default": "green"
-      }
-    
-        ]
-    }]
-  }
+{
+  "name": "Subscription Multicolumn",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_name",
+      "label": "Header",
+      "default": "Subscription"
+    },
+    {
+      "type": "select",
+      "id": "section_color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "dark", "label": "Dark" },
+        { "value": "accent", "label": "Accent" }
+      ],
+      "default": "accent"
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "Section Padding",
+      "options": [
+        { "value": "small", "label": "Small" },
+        { "value": "medium", "label": "Medium" },
+        { "value": "large", "label": "Large" }
+      ],
+      "default": "medium"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "subscription_option",
+      "name": "Subscription Option",
+      "settings": [
+        {
+          "type": "text",
+          "id": "subscription_name",
+          "label": "Header",
+          "default": "Subscription Header"
+        },
+        {
+          "type": "text",
+          "id": "subscription_benefit",
+          "label": "Subscription Benefit",
+          "default": "Why you should choose this option"
+        },
+        {
+          "type": "text",
+          "id": "subscription_price",
+          "label": "Subscription Price",
+          "default": "$0.0"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "label": "Color Scheme",
+          "options": [
+            { "value": "light", "label": "Light" },
+            { "value": "blue", "label": "Blue" },
+            { "value": "green", "label": "Green" }
+          ],
+          "default": "green"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Subscription Multicolumn",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
 <style>
 .subscription-section {
