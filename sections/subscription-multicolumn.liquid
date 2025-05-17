@@ -121,7 +121,13 @@
         {% if block.type == 'subscription_option' %}
           <div class="subscription_option_container option-{{ block.settings.color_scheme }}">
             <h2>{{ block.settings.subscription_name }}</h2>
+            {%   if 'block.type' == 'subscription_benefit'%}
             <p>{{ block.settings.subscription_benefit }}</p>
+            <p>{{ block.settings.subscription_benefit }}</p>
+            <p>{{ block.settings.subscription_benefit }}</p>
+            <p>{{ block.settings.subscription_benefit }}</p>
+            <p>{{ block.settings.subscription_benefit }}</p>
+ {% endif %}
             <p><strong>{{ block.settings.subscription_price }}</strong></p>
           </div>
         {% endif %}
