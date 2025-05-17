@@ -263,54 +263,6 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_RDJ7Wg": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_taE49a": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_YixqRi": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_pEaj7x": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_taE49a",
-        "text_YixqRi",
-        "buttons_pEaj7x"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_04_04_52_PM.png",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "custom_image_banner_iQFtVq": {
       "type": "custom-image-banner",
       "blocks": {
@@ -353,7 +305,6 @@
     "featured_product_hygVg4",
     "video-grids",
     "featured_blog_jVBCkn",
-    "image_banner_RDJ7Wg",
     "custom_image_banner_iQFtVq"
   ]
 }
