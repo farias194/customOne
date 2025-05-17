@@ -99,6 +99,9 @@
 }
 {% endschema %}
 <style>
+  .section-name{
+    font-size: 3.5rem
+  }
 .subscription-section {
   width: 100%;
 }
@@ -151,7 +154,7 @@
 
 <section class="subscription-section color-scheme-{{ section.settings.section_color_scheme }} padding-{{ section.settings.section_padding }}">
   <div class="page-width">
-    <h1>{{ section.settings.section_name }}</h1>
+    <h1 class="section-name">{{ section.settings.section_name }}</h1>
 
     <div class="subscription_options__container">
       {% for block in section.blocks %}
