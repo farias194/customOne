@@ -247,10 +247,10 @@
         "subscription_option_ydtdcJ": {
           "type": "subscription_option",
           "settings": {
-            "subscription_name": "Subscription Header",
-            "subscription_benefit": "",
-            "subscription_benefit_2": "",
-            "subscription_benefit_3": "",
+            "subscription_name": "3 Months",
+            "subscription_benefit": "Early product previews + exclusive discounts ",
+            "subscription_benefit_2": "Priority access to limited editions",
+            "subscription_benefit_3": "3 monthly boxes, billed upfront",
             "subscription_benefit_4": "",
             "subscription_benefit_5": "",
             "subscription_price": "$0.0",
