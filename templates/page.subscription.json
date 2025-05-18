@@ -77,60 +77,6 @@
         "show_text_below": true
       }
     },
-    "multicolumn_pz74ih": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_zYX8NM": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_VqNCJY": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_H8HddM": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_zYX8NM",
-        "column_VqNCJY",
-        "column_H8HddM"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "Subscription",
-        "heading_size": "h1",
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "rich_text_8bLeap": {
       "type": "rich-text",
       "blocks": {
@@ -146,23 +92,11 @@
           "settings": {
             "text": "<p>Whether you’re breaking out, calming down, or leveling up your glow—each Vela Box is curated to be universal, gentle, and effective across skin types.</p>"
           }
-        },
-        "button_tPFCCX": {
-          "type": "button",
-          "settings": {
-            "button_label": "Subscribe Now",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_8xcpak",
-        "text_jVqqAj",
-        "button_tPFCCX"
+        "text_jVqqAj"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -296,7 +230,6 @@
     "about_hero_WJhDiw",
     "rich_text_pyz9MP",
     "image_banner_JUXTdB",
-    "multicolumn_pz74ih",
     "rich_text_8bLeap",
     "multicolumn_KaperN",
     "subscription_multicolumn_aijV7x"
