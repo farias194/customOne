@@ -273,8 +273,8 @@
             "subscription_benefit_5": "",
             "subscription_price": "$0.0",
             "color_scheme": "green",
-            "subscription_button": "",
-            "subscription_button_text": "insert CTA here"
+            "subscription_button": "shopify://collections/frontpage",
+            "subscription_button_text": "Subscribe Bi Yearly"
           }
         }
       },
