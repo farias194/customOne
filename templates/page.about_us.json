@@ -17,8 +17,7 @@
           "settings": {
             "about_text": "Skincare, Simplified",
             "text_font_size": "15rem",
-            "font_color": "#d6df7d",
-            "text_positioning": "end"
+            "font_color": "#d6df7d"
           }
         }
       },
@@ -27,7 +26,7 @@
       ],
       "settings": {
         "about_image": "shopify://shop_images/pexels-polina-kovaleva-6543552.jpg",
-        "text_positioning": "center"
+        "text_positioning": "flex-end"
       }
     },
     "about-body": {
