@@ -101,7 +101,7 @@
 
 <div >
 <div class= "about_container" style=
-"background-image: url('{{section.settings.about_image |  image_url : large }}');"
+"background-image: url('{{section.settings.about_image |  image_url : large }}');">
 
 {% for block in section.blocks %}
     {% case block.type  %}
@@ -110,8 +110,7 @@
 <h1 style = 
   "font-size : {{block.settings.text_font_size }}; 
   color: {{ block.settings.font_color }};
-  align-self: {{ block.settings.text_positioning }};
-  "
+  align-self: {{ block.settings.text_positioning }};"
   
   class="about-text">{{block.settings.about_text}}</h1>
 {%endcase%}
