@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -23,7 +24,8 @@
           "type": "text",
           "settings": {
             "about_text": "Freshly Curated, Delivered Monthly",
-            "text_font_size": "15rem"
+            "text_font_size": "15rem",
+            "font_color": "#d6df7d"
           }
         }
       },
