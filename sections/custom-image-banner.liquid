@@ -1,75 +1,74 @@
 {% schema %}
-  
+
+{
+  "name": "Custom Image Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image"
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "name": "headline",
+
+      "settings": [
+        {
+          "type": "text",
+          "id": "banner_header",
+          "default": "insert text here",
+          "label": "Banner Text"
+
+        }
+
+      ]
+
+    },
+    {
+          "type": "body_text",
+          "name": "body",
+          "settings":[
+            {
+              "type": "textarea",
+              "id": "banner_text",
+              "default": "insert text",
+              "label": "banner text",
+
+
+            }
+          ]
+        },
+    {
+      "type": "button",
+      "name": "Banner Button",
+      "settings": [
+        {
+          "type": "text",
+          "default": "insert CTA here",
+          "id": "banner_button_text",
+          "label": "Button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "button_link"
+        }
+      ]
+    }
+  ],
+
+ "presets": [
   {
     "name": "Custom Image Banner",
-    "tag": "section",
-    "class": "section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "image"
-      }
-     
-    ],
-    "blocks": [
-      {
-        "type": "header",
-        "name": "headline",
-        
-        "settings": [
-          {
-            "type": "text",
-            "id": "banner_header",
-            "default": "insert text here",
-            "label": "Banner Text"
-            
-          }
-       
-        ]
-        
-      },
-      {
-            "type": "body_text",
-            "name": "body",
-            "settings":[
-              {
-                "type": "textarea",
-                "id": "banner_text",
-                "default": "insert text",
-                "label": "banner text",
-                
-                
-              }
-            ]
-          },
-      {
-        "type": "button",
-        "name": "Banner Button",
-        "settings": [
-          {
-            "type": "text",
-            "default": "insert CTA here",
-            "id": "banner_button_text",
-            "label": "Button"
-          },
-          {
-            "type": "url",
-            "id": "button_link",
-            "label": "button_link"
-          }
-        ]
-      }
-    ],
-  
-   "presets": [
-    {
-      "name": "Custom Image Banner",
-      "category": "Custom"
-    }
-  ]
+    "category": "Custom"
   }
-  
+]
+}
 {% endschema %}
 <style>
   .banner_image{
@@ -77,15 +76,15 @@
     width: 100%;
     z-index: 1;
     opacity: 0.4;
-      
+
 
     height: auto;
-    
-    
+
+
   }
-  
+
   .banner_header{
-  
+
   }
   .banner_text{
 
@@ -95,7 +94,7 @@
     max-width: auto;
     height: auto;
     position: relative;
-    
+
   }
   .text-container{
     padding: 5rem;
@@ -106,37 +105,40 @@
     text-align: center;
     position: absolute;
   }
+  .banner_button{
+    background-color: white;
+    width: auto;
+  }
 </style>
-
 
 <div class="custom_image_banner_container">
   <div class="image_container">
-      {%  if section.settings.image %}
-<img class="banner_image" src="{{ section.settings.image | image_url}}" width="auto" height="auto">
-            {% endif %}
-
-        </div>
-  <div class="text-container">
-  <div class='text'>
-    {% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'header'%}
- <h1 class="banner_header">{{ block.settings.banner_header }}</h1>
-    {% when 'body_text' %}
-      <p class="banner_text">{{ block.settings.banner_text }}</p>
-    {% endcase %}
-      {% endfor %}
-</div>
-  <div class="banner_button">
-{% for block in section.blocks %}
-    {% case block.type %}
-      {%  when 'button' %}
-      {%  if block.settings.button_link and block.settings.banner_button_text %}
-        <a href="{{ block.settings.button_link }}">
-  <h2>{{ block.settings.banner_button_text }} </h2></a>
+    {% if section.settings.image %}
+      <img class="banner_image" src="{{ section.settings.image | image_url}}" width="auto" height="auto">
     {% endif %}
-    {% endcase %}
-  {% endfor %}
   </div>
+  <div class="text-container">
+    <div class="text">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'header' %}
+            <h1 class="banner_header">{{ block.settings.banner_header }}</h1>
+          {% when 'body_text' %}
+            <p class="banner_text">{{ block.settings.banner_text }}</p>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    <div class="banner_button">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'button' %}
+            {% if block.settings.button_link and block.settings.banner_button_text %}
+              <a class="banner_button" href="{{ block.settings.button_link }}">
+                <h2>{{ block.settings.banner_button_text }}</h2>
+              </a>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+    </div>
   </div>
 </div>
