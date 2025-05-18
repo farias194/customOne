@@ -107,7 +107,8 @@
   }
   .banner_button{
     background-color: white;
-    width: auto;
+    width: 50px;
+    
   }
 </style>
 
@@ -134,7 +135,7 @@
           {% when 'button' %}
             {% if block.settings.button_link and block.settings.banner_button_text %}
               <a class="banner_button" href="{{ block.settings.button_link }}">
-                <h2>{{ block.settings.banner_button_text }}</h2>
+                <h2 class="banner_button_text">{{ block.settings.banner_button_text }}</h2>
               </a>
             {% endif %}
         {% endcase %}
