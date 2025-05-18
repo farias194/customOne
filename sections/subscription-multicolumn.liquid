@@ -86,7 +86,18 @@
             { "value": "green", "label": "Green" }
           ],
           "default": "green"
-        }
+        },
+        {
+          "type": "url",
+          "id": "subscription_button",
+          "label": "subscription button",
+        },
+         {
+            "type": "text",
+            "default": "insert CTA here",
+            "id": "subscription_button_text",
+            "label": "Button"
+          },
       ]
     }
   ],
@@ -183,6 +194,9 @@
               {% endif %}
 
             <p><strong>{{ block.settings.subscription_price }}</strong></p>
+          {%  if block.settings.subscription_button and block.settings.button_text %}
+            <a href ={{ block.settings.subscription_button }}> <p>{{ block.settings.button_text }}</p></a>
+            {% endif %}
           </div>
         {% endif %}
       {% endfor %}
