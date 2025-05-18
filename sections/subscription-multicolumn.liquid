@@ -112,6 +112,7 @@
 <style>
   .section-name{
 font-size: clamp(1.5rem, 5vw, 3rem);  }
+  
 .subscription-section {
   width: 100%;
 }
@@ -200,10 +201,11 @@ font-size: clamp(1.5rem, 5vw, 3rem);  }
               {% endif %}
 
             <p><strong>{{ block.settings.subscription_price }}</strong></p>
-          {%  if block.settings.subscription_button and block.settings.subscription_button_text %}
+          
+          </div>
+      {%  if block.settings.subscription_button and block.settings.subscription_button_text %}
             <a class ="subscription_button" href ="{{ block.settings.subscription_button }}"> {{ block.settings.subscription_button_text}} </a>
             {% endif %}
-          </div>
         {% endif %}
       {% endfor %}
     </div>
