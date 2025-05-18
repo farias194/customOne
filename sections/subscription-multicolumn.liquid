@@ -152,7 +152,7 @@
   margin: 1rem;
   border-radius: 10px;
 }
-  .button{
+  .subscription_button{
     background-color: white;
     padding: 1rem;
   }
@@ -199,7 +199,7 @@
 
             <p><strong>{{ block.settings.subscription_price }}</strong></p>
           {%  if block.settings.subscription_button and block.settings.button_text %}
-            <a class ="button" href ="{{ block.settings.subscription_button }}"> <p>{{ block.settings.button_text }}</p></a>
+            <a class ="subscription_button" href ="{{ block.settings.subscription_button }}"> <p>{{ block.settings.button_text }}</p></a>
             {% endif %}
           </div>
         {% endif %}
