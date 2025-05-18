@@ -83,7 +83,10 @@
     
     
   }
-  
+  .text-container{
+     max-width: auto;
+    position: relative;
+  }
   .banner_header{
     position: absolute;
     top:2%;
@@ -96,8 +99,7 @@
     z-index: 2;
   }
   .custom_image_banner_container{
-    max-width: auto;
-    position: relative;
+   
   }
 </style>
 
@@ -109,6 +111,7 @@
             {% endif %}
 
         </div>
+  <div class="text-container">
   <div class='text'>
     {% for block in section.blocks %}
   {% case block.type %}
@@ -129,5 +132,6 @@
     {% endif %}
     {% endcase %}
   {% endfor %}
+  </div>
   </div>
 </div>
