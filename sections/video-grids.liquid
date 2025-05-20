@@ -98,7 +98,6 @@
     
     <div class='container'>
       <section class="video_container">
-                  <button class="prevVideo"> <p><</p> </button>
 
         <div class="video-grid-desktop" style="--columns: {{ section.settings.columns-desktop }}">
           {% for block in section.blocks %}
@@ -131,7 +130,9 @@
           {% endfor %}
 
         </div>
-                                  <button class="nextVideo"> <p>></p> </button>
+                          <button class="prevVideo"> <p><</p> </button>
+                          
+        <button class="nextVideo"> <p>></p> </button>
 
       </section>
     </div>
