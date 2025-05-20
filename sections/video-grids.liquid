@@ -98,8 +98,9 @@
     
     <div class='container'>
       <section class="video_container">
+                  <button class="prevVideo"> <p><</p> </button>
+
         <div class="video-grid-desktop" style="--columns: {{ section.settings.columns-desktop }}">
-          <button class="prevVideo"> <p><</p> </button>
           {% for block in section.blocks %}
             {% case block.type %}
               {% when 'video' %}
@@ -128,9 +129,10 @@
                 </div>
             {% endcase %}
           {% endfor %}
-                      <button class="nextVideo"> <p>></p> </button>
 
         </div>
+                                  <button class="nextVideo"> <p>></p> </button>
+
       </section>
     </div>
     
