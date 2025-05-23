@@ -267,6 +267,10 @@
 }
 
 .card--standard > .card__content .card__information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
   padding-left: 0;
   padding-right: 0;
 }
