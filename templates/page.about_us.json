@@ -75,6 +75,7 @@
         "heading_BtX9w9",
         "text_7Q3dPz"
       ],
+      "disabled": true,
       "name": "Third",
       "settings": {
         "image": "shopify://shop_images/pexels-shvetsa-3852204.jpg",
@@ -105,6 +106,42 @@
         "mobile_content_alignment": "left",
         "padding_top": 44,
         "padding_bottom": 40
+      }
+    },
+    "custom_image_with_text_9wGTBN": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "heading_PzaYW9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "button_Q93XYP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_PzaYW9",
+        "button_Q93XYP"
+      ],
+      "name": "custom image with text",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_EM4TMU": {
@@ -225,6 +262,7 @@
     "about-hero",
     "about-body",
     "image_with_text_nKgkmF",
+    "custom_image_with_text_9wGTBN",
     "image_with_text_eLH3WN",
     "rich_text_EM4TMU",
     "about-values",
