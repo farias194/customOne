@@ -273,6 +273,8 @@
   flex-wrap: wrap;
   padding-left: 0;
   padding-right: 0;
+  justify-content: space-around;
+  
 }
 
 .card--card.card--media .card__inner .card__information,
