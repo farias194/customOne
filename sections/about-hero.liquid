@@ -1,135 +1,129 @@
-{% schema  %}  
+{% schema %}
 {
-    "name": "Header",
-    "tag": "section",
-    "class": "hero_section",
-    "settings": [{
-        "type": "image_picker",
-        "id": "about_image",
-        "label": "image_picker"
-        
-    },
-          {
-            "type": "select",
-            "id": "text_positioning",
-            "default": "center",
-            "label": "positioning",
-            "options": [
-                {"value": "center", "label": "center"},
-                {"value": "flex-end", "label": "end"},
-                {"value": "flex-start", "label": "start"}
-            ]
-        }
-      
-  
-],
-"blocks": [{
-    "type": "text",
-    "name":"text",
-    "settings": [{
-        "type": "text",
-        "default":"insert text here",
-        "id": "about_text",
-        "label": "Tagline"
-    },
-       {
-      "type": "select",
-        "id": "text_font_size",
-         "label": "Font Size",
-         "options": [
-           {
-             "value": "1.5rem",
-             "label": "small"
-           },
-            {
-             "value": "3.5rem",
-             "label": "medium"
-           },
-            {
-             "value": "clamp(1rem, 10vw, 15rem)",
-             "label": "large"
-           },
-         ]
-    },
-      {"type": "color",
-        "id": "font_color",
-        "label": "Text Color",
-        "default": "#D6DF7D"
-      
-      },
-      {
-
-      "type": "select",
-      "id": "padding_size",
-      "label": "Padding size",
-      "options": [
-        {
-          "value": "clamp(1px, 1vw, 10px)",
-          "label": "Small"
-        },
-        {
-          "value": "clamp(2px, 1.5vw, 0.75rem)",
-          "label": "Medium"
-        },
-        {
-          "value": "clamp(1px, 2vw, 1rem)",
-          "label": "Large"
-        }
-      ],
-      "default": "clamp(2px, 1.5vw, 0.75rem)"
-    }
-  
-
-    
-    ]
-}
-   ],
-
-
-
-"presets": [
+  "name": "Header",
+  "tag": "section",
+  "class": "hero_section",
+  "settings": [
     {
-        "name": " About Header Section"
+      "type": "image_picker",
+      "id": "about_image",
+      "label": "Image Picker"
+    },
+    {
+      "type": "select",
+      "id": "text_positioning",
+      "default": "center",
+      "label": "Positioning",
+      "options": [
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "End" },
+        { "value": "flex-start", "label": "Start" }
+      ]
     }
-]
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "default": "Insert text here",
+          "id": "about_text",
+          "label": "Tagline"
+        },
+        {
+          "type": "select",
+          "id": "text_font_size",
+          "label": "Font Size",
+          "options": [
+            {
+              "value": "clamp(0.75rem, 4vw, 1.25rem)",
+              "label": "Small"
+            },
+            {
+              "value": "clamp(1rem, 8vw, 3rem)",
+              "label": "Medium"
+            },
+            {
+              "value": "clamp(1rem, 16vw, 15rem)",
+              "label": "Large"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Text Color",
+          "default": "#D6DF7D"
+        },
+        {
+          "type": "select",
+          "id": "padding_size",
+          "label": "Padding size",
+          "options": [
+            {
+              "value": "clamp(1px, 1vw, 10px)",
+              "label": "Small"
+            },
+            {
+              "value": "clamp(2px, 1.5vw, 0.75rem)",
+              "label": "Medium"
+            },
+            {
+              "value": "clamp(1px, 2vw, 1rem)",
+              "label": "Large"
+            }
+          ],
+          "default": "clamp(2px, 1.5vw, 0.75rem)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Header Section"
+    }
+  ]
 }
-
-
 {% endschema %}
-<style>
-    .about_container{
-       aspect-ratio: 16 / 9;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        background-position: revert;
-            flex-direction: column;
 
-    }
-    .about-text{
-        
-    }
+<style>
+  .about_container {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: revert;
+    flex-direction: column;
+  }
+
+  .about-text {
+    /* styles can go here if needed */
+  }
 </style>
 
-<div >
-<div class= "about_container" style=
-"background-image: url('{{section.settings.about_image |  image_url : large }}');
-  justify-content: {{ section.settings.text_positioning }}"
+<div>
+  <div
+    class="about_container"
+    style="background-image: url('{{ section.settings.about_image | image_url: 'large' }}'); justify-content: {{ section.settings.text_positioning }};"
   >
-
-{% for block in section.blocks %}
-    {% case block.type  %}
-    {%when 'text' %}
-
-<h1 style = 
-  "font-size : {{block.settings.text_font_size }}; 
-  color: {{ block.settings.font_color }};
-  align-self: {{ block.settings.text_positioning }};
-  padding: {{ block.settings.padding_size }}";
-  
-  class="about-text">{{block.settings.about_text}}</h1>
-{%endcase%}
-{%endfor%}
-</div>
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'text' %}
+          <h1
+            style="
+              font-size: {{ block.settings.text_font_size }};
+              color: {{ block.settings.font_color }};
+              align-self: {{ section.settings.text_positioning }};
+              padding: {{ block.settings.padding_size }};
+            "
+            class="about-text"
+          >
+            {{ block.settings.about_text }}
+          </h1>
+      {% endcase %}
+    {% endfor %}
+  </div>
 </div>
