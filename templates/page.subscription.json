@@ -234,7 +234,7 @@
           "type": "review",
           "settings": {
             "reviewer_name": "Marianne",
-            "review_text": "This product was amazing! Highly recommend.",
+            "review_text": "\"This scrub strikes the perfect balance—effective but not harsh. My skin feels soft and renewed after every use, and the natural ingredients make it a guilt-free treat.\"",
             "star_rating": 4
           }
         },
@@ -242,7 +242,7 @@
           "type": "review",
           "settings": {
             "reviewer_name": "John Doe",
-            "review_text": "This product was amazing! Highly recommend.",
+            "review_text": "\"I’ve never seen my skin look so vibrant! This serum absorbs quickly and leaves my face feeling hydrated and glowing all day. A must-have for anyone looking to refresh their skincare routine!\"",
             "star_rating": 5
           }
         }
