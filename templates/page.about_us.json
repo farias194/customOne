@@ -91,6 +91,51 @@
         "padding_bottom": 4
       }
     },
+    "custom_image_with_text_9wGTBN": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "heading_QeNRfd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Skin-first.",
+            "heading_size": "h1"
+          }
+        },
+        "heading_7JaAmT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Science Backed.",
+            "heading_size": "h1"
+          }
+        },
+        "heading_PzaYW9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Always Intentional",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QeNRfd",
+        "heading_7JaAmT",
+        "heading_PzaYW9"
+      ],
+      "name": "custom image with text",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Apr_8_2025_03_24_57_PM.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_eLH3WN": {
       "type": "image-with-text",
       "name": "t:sections.image-with-text.presets.name",
@@ -106,42 +151,6 @@
         "mobile_content_alignment": "left",
         "padding_top": 44,
         "padding_bottom": 40
-      }
-    },
-    "custom_image_with_text_9wGTBN": {
-      "type": "custom-image-with-text",
-      "blocks": {
-        "heading_PzaYW9": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "button_Q93XYP": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_PzaYW9",
-        "button_Q93XYP"
-      ],
-      "name": "custom image with text",
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_EM4TMU": {
