@@ -16,7 +16,7 @@
           "type": "text",
           "settings": {
             "about_text": "Skincare, Simplified",
-            "text_font_size": "15rem",
+            "text_font_size": "clamp(1rem, 10vw, 15rem)",
             "font_color": "#d6df7d"
           }
         }

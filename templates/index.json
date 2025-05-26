@@ -122,13 +122,6 @@
     "featured_product_hygVg4": {
       "type": "featured-product",
       "blocks": {
-        "text_7aUVnr": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title_8DxMwi": {
           "type": "title",
           "settings": {
@@ -137,7 +130,10 @@
         },
         "price_MhghTB": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "picker_type": "button",
+            "price_font_size": "3.5rem"
+          }
         },
         "variant_picker_qzfpAU": {
           "type": "variant_picker",
@@ -170,7 +166,6 @@
         }
       },
       "block_order": [
-        "text_7aUVnr",
         "title_8DxMwi",
         "price_MhghTB",
         "variant_picker_qzfpAU",
