@@ -226,6 +226,35 @@
         "section_color_scheme": "light",
         "section_padding": "large"
       }
+    },
+    "custom_reviews_section_WaE8Xm": {
+      "type": "custom-reviews-section",
+      "blocks": {
+        "review_jGLrUz": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Marianne",
+            "review_text": "This product was amazing! Highly recommend.",
+            "star_rating": 4
+          }
+        },
+        "review_rD6nRA": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "John Doe",
+            "review_text": "This product was amazing! Highly recommend.",
+            "star_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "review_jGLrUz",
+        "review_rD6nRA"
+      ],
+      "name": "Reviews Section",
+      "settings": {
+        "section_title": "What our customers say"
+      }
     }
   },
   "order": [
@@ -235,6 +264,7 @@
     "image_banner_JUXTdB",
     "rich_text_8bLeap",
     "multicolumn_KaperN",
-    "subscription_multicolumn_aijV7x"
+    "subscription_multicolumn_aijV7x",
+    "custom_reviews_section_WaE8Xm"
   ]
 }
