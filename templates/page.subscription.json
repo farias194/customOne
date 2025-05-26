@@ -26,7 +26,7 @@
             "about_text": "Freshly Curated, Delivered Monthly",
             "text_font_size": "clamp(1rem, 16vw, 15rem)",
             "font_color": "#d6df7d",
-            "padding_size": "clamp(1px, 2vw, 1rem)"
+            "padding_size": "clamp(1.5px, 3vw, 1.5rem)"
           }
         }
       },
