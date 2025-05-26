@@ -63,19 +63,19 @@
           "label": "Padding size",
           "options": [
             {
-              "value": "clamp(1px, 1vw, 10px)",
+              "value": "clamp(1.5px, 1.5vw, 15px)",
               "label": "Small"
             },
             {
-              "value": "clamp(2px, 1.5vw, 0.75rem)",
+              "value": "clamp(3px, 2.25vw, 1.125rem)",
               "label": "Medium"
             },
             {
-              "value": "clamp(1px, 2vw, 1rem)",
+              "value": "clamp(1.5px, 3vw, 1.5rem)",
               "label": "Large"
             }
           ],
-          "default": "clamp(2px, 1.5vw, 0.75rem)"
+          "default": "clamp(3px, 2.25vw, 1.125rem)"
         }
       ]
     }
@@ -100,14 +100,14 @@
   }
 
   .about-text {
-    /* styles can go here if needed */
+    /* Custom styles go here if needed */
   }
 </style>
 
 <div>
   <div
     class="about_container"
-    style="background-image: url('{{ section.settings.about_image | img_url: 'master' }}'); justify-content: {{ section.settings.text_positioning }};"
+    style="background-image: url('{{ section.settings.about_image | image_url: 'large' }}'); justify-content: {{ section.settings.text_positioning }};"
   >
     {% for block in section.blocks %}
       {% case block.type %}
@@ -127,3 +127,4 @@
     {% endfor %}
   </div>
 </div>
+
