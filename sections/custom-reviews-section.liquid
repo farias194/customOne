@@ -1,4 +1,5 @@
-{% schema %}{
+{% schema %}
+{
   "name": "Reviews",
   "tag": "section",
   "class": "reviews_section",
@@ -20,11 +21,6 @@
           "id": "reviewer_name",
           "label": "Reviewer Name",
           "default": "John Doe"
-        },
-        {
-          "type": "image_picker",
-          "id": "reviewer_photo",
-          "label": "Reviewer Photo (optional)"
         },
         {
           "type": "textarea",
@@ -51,3 +47,77 @@
   ]
 }
 {% endschema %}
+
+<style>
+  .reviews_section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+
+  .reviews_section__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .reviews_section__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .review_block {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .reviewer_name {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .review_text {
+    font-style: italic;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  .star_rating {
+    color: #f5a623;
+    font-size: 1.25rem;
+  }
+</style>
+
+<section class="reviews_section">
+  <h2 class="reviews_section__title">{{ section.settings.section_title }}</h2>
+  <div class="reviews_section__container">
+    {% for block in section.blocks %}
+      {% if block.type == 'review' %}
+        <article class="review_block">
+          <h3 class="reviewer_name">{{ block.settings.reviewer_name }}</h3>
+          <p class="review_text">"{{ block.settings.review_text }}"</p>
+          <div class="star_rating">
+            {% assign stars = block.settings.star_rating | plus: 0 %}
+            {% for i in (1..5) %}
+              {% if i <= stars %}
+                &#9733;
+              {% else %}
+                &#9734;
+              {% endif %}
+            {% endfor %}
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
