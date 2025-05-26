@@ -251,6 +251,9 @@
         "review_jGLrUz",
         "review_rD6nRA"
       ],
+      "custom_css": [
+        "h1{font-size: 16vw;}"
+      ],
       "name": "Reviews Section",
       "settings": {
         "section_title": "What our customers say"
