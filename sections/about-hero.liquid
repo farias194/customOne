@@ -64,19 +64,19 @@
       "label": "Padding size",
       "options": [
         {
-          "value": "small",
+          "value": "clamp(1px, 1vw, 10px)",
           "label": "Small"
         },
         {
-          "value": "medium",
+          "value": "clamp(2px, 1.5vw, 0.75rem)",
           "label": "Medium"
         },
         {
-          "value": "large",
+          "value": "clamp(1px, 2vw, 1rem)",
           "label": "Large"
         }
       ],
-      "default": "medium"
+      "default": "clamp(2px, 1.5vw, 0.75rem)"
     }
   
 
@@ -108,7 +108,6 @@
 
     }
     .about-text{
-      padding: 5rem;
         
     }
 </style>
@@ -126,7 +125,8 @@
 <h1 style = 
   "font-size : {{block.settings.text_font_size }}; 
   color: {{ block.settings.font_color }};
-  align-self: {{ block.settings.text_positioning }};"
+  align-self: {{ block.settings.text_positioning }};
+  padding: {{ block.settings.padding_size }}";
   
   class="about-text">{{block.settings.about_text}}</h1>
 {%endcase%}
