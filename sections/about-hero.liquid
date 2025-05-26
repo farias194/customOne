@@ -107,7 +107,7 @@
 <div>
   <div
     class="about_container"
-    style="background-image: url('{{ section.settings.about_image | image_url: 'large' }}'); justify-content: {{ section.settings.text_positioning }};"
+    style="background-image: url('{{ section.settings.about_image | img_url: 'large' }}'); justify-content: {{ section.settings.text_positioning }};"
   >
     {% for block in section.blocks %}
       {% case block.type %}
