@@ -164,6 +164,30 @@ font-size: clamp(1.5rem, 5vw, 3rem);  }
   flex-direction: column;
   align-items: center;
 }
+  .subscription_options__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem; /* optional, for spacing between cards */
+}
+
+.subscription_option_wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* ensures child stretches */
+  min-width: 250px; /* adjust as needed */
+}
+
+.subscription_option_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
   
   [class*="subscription_options__container"]{
     display: flex;
