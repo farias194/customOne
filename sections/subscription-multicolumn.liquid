@@ -158,6 +158,12 @@ font-size: clamp(1.5rem, 5vw, 3rem);  }
     text-decoration: none;
     padding: 1rem;
   }
+  .subscription_option_wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
   [class*="subscription_options__container"]{
     display: flex;
@@ -169,44 +175,38 @@ font-size: clamp(1.5rem, 5vw, 3rem);  }
   flex: 1;
 }
 </style>
+<div class="subscription_options__container">
+  {% for block in section.blocks %}
+    {% if block.type == 'subscription_option' %}
+      <div class="subscription_option_wrapper">
+        <div class="subscription_option_container option-{{ block.settings.color_scheme }}">
+          <h2 class="subscription-name">{{ block.settings.subscription_name }}</h2>
 
-<section class="subscription-section color-scheme-{{ section.settings.section_color_scheme }} padding-{{ section.settings.section_padding }}">
-  <div class="page-width">
-    <h1 class="section-name">{{ section.settings.section_name }}</h1>
-
-    <div class="subscription_options__container">
-      {% for block in section.blocks %}
-        {% if block.type == 'subscription_option' %}
-          <div class="subscription_option_container option-{{ block.settings.color_scheme }}">
-            <h2 class="subscription-name">{{ block.settings.subscription_name }}</h2>
-            {%   if  "block.settings.subscription_benefit" != blank%}
+          {% if block.settings.subscription_benefit != blank %}
             <p>{{ block.settings.subscription_benefit }}</p>
-          
- {% endif %}
-            {%   if  "block.settings.subscription_benefit_2" != blank%}
-              <p>{{ block.settings.subscription_benefit_2 }}</p>
+          {% endif %}
+          {% if block.settings.subscription_benefit_2 != blank %}
+            <p>{{ block.settings.subscription_benefit_2 }}</p>
+          {% endif %}
+          {% if block.settings.subscription_benefit_3 != blank %}
+            <p>{{ block.settings.subscription_benefit_3 }}</p>
+          {% endif %}
+          {% if block.settings.subscription_benefit_4 != blank %}
+            <p>{{ block.settings.subscription_benefit_4 }}</p>
+          {% endif %}
+          {% if block.settings.subscription_benefit_5 != blank %}
+            <p>{{ block.settings.subscription_benefit_5 }}</p>
+          {% endif %}
 
-              {% endif %}
-          {%   if  "block.settings.subscription_benefit_3" != blank%}
-              <p>{{ block.settings.subscription_benefit_3 }}</p>
+          <p><strong>{{ block.settings.subscription_price }}</strong></p>
+        </div>
 
-              {% endif %}
-           {%   if  "block.settings.subscription_benefit_4" != blank%}
-              <p>{{ block.settings.subscription_benefit_4 }}</p>
-
-              {% endif %}
-           {%   if  "block.settings.subscription_benefit_5" != blank%}
-              <p>{{ block.settings.subscription_benefit_5 }}</p>
-
-              {% endif %}
-
-            <p><strong>{{ block.settings.subscription_price }}</strong></p>
-          {%  if block.settings.subscription_button and block.settings.subscription_button_text %}
-            <a class ="subscription_button" href ="{{ block.settings.subscription_button }}"> {{ block.settings.subscription_button_text}} </a>
-            {% endif %}
-          </div>
+        {% if block.settings.subscription_button and block.settings.subscription_button_text %}
+          <a class="subscription_button" href="{{ block.settings.subscription_button }}">
+            {{ block.settings.subscription_button_text }}
+          </a>
         {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
